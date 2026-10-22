@@ -1,0 +1,59 @@
+{
+  "meta": { "title": "Mirella Iezzi — videomaker" },
+  "signature": "Mirella Iezzi",
+  "soon": "coming soon",
+  "nav": {
+    "sobre": "about",
+    "projetos": "projects",
+    "servicos": "services",
+    "contato": "contact",
+    "lang": "pt",
+    "langLabel": "mudar para português"
+  },
+  "hero": {
+    "kicker": "rec · videomaker in guarujá, brazil",
+    "lede": "Filming, scripting and editing vertical video for fashion, beauty, events and social media.",
+    "placeholder": "animated opening collage"
+  },
+  "sobre": {
+    "title": "about",
+    "placeholder": "background and numbers"
+  },
+  "projetos": {
+    "title": "projects",
+    "kicker": "each branch is a field · each folder opens a project",
+    "path": "projects",
+    "sidebar": "branches",
+    "replay": "↻ grow again",
+    "count": "{branches} branches · {folders} folders",
+    "statusNote": "videos coming soon",
+    "close": "close ✕",
+    "video": "9:16 video",
+    "take": "take",
+    "branches": [
+      { "id": "moda", "label": "fashion", "items": ["casa martin medeiros", "spencive", "salão casa moda"] },
+      { "id": "eventos", "label": "events", "items": ["melhor dia", "coverage", "story making"] },
+      { "id": "social", "label": "social / reels", "items": ["fashion", "beauty", "health"] },
+      { "id": "teatro", "label": "theater", "items": ["procópio ferreira", "retrospectives"] }
+    ]
+  },
+  "servicos": {
+    "title": "services",
+    "placeholder": "filming, scripting, editing, social media and event coverage"
+  },
+  "contato": {
+    "title": "contact",
+    "kicker": "shall we shoot something together?",
+    "whatsapp": "message on whatsapp",
+    "instagram": "instagram",
+    "email": "email"
+  },
+  "footer": {
+    "socialLabel": "[social]",
+    "social": "instagram · tiktok",
+    "reachLabel": "[reach]",
+    "reach": "whatsapp · email",
+    "locationLabel": "[location]",
+    "location": "guarujá, sp — brazil"
+  }
+}

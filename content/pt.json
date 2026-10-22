@@ -1,0 +1,59 @@
+{
+  "meta": { "title": "Mirella Iezzi — videomaker" },
+  "signature": "Mirella Iezzi",
+  "soon": "em breve",
+  "nav": {
+    "sobre": "sobre",
+    "projetos": "projetos",
+    "servicos": "serviços",
+    "contato": "contato",
+    "lang": "en",
+    "langLabel": "switch to english"
+  },
+  "hero": {
+    "kicker": "rec · videomaker em guarujá, sp",
+    "lede": "Captação, roteiro e edição de vídeos verticais para moda, beleza, eventos e social media.",
+    "placeholder": "colagem animada da abertura"
+  },
+  "sobre": {
+    "title": "sobre",
+    "placeholder": "trajetória e números"
+  },
+  "projetos": {
+    "title": "projetos",
+    "kicker": "cada galho é uma área · cada pasta abre um projeto",
+    "path": "projetos",
+    "sidebar": "galhos",
+    "replay": "↻ crescer de novo",
+    "count": "{branches} galhos · {folders} pastas",
+    "statusNote": "vídeos em breve",
+    "close": "fechar ✕",
+    "video": "vídeo 9:16",
+    "take": "take",
+    "branches": [
+      { "id": "moda", "label": "moda", "items": ["casa martin medeiros", "spencive", "salão casa moda"] },
+      { "id": "eventos", "label": "eventos", "items": ["melhor dia", "coberturas", "story making"] },
+      { "id": "social", "label": "social / reels", "items": ["moda", "beleza", "saúde"] },
+      { "id": "teatro", "label": "teatro", "items": ["procópio ferreira", "retrospectivas"] }
+    ]
+  },
+  "servicos": {
+    "title": "serviços",
+    "placeholder": "captação, roteiro, edição, social media e cobertura de eventos"
+  },
+  "contato": {
+    "title": "contato",
+    "kicker": "vamos gravar alguma coisa juntos?",
+    "whatsapp": "chamar no whatsapp",
+    "instagram": "instagram",
+    "email": "e-mail"
+  },
+  "footer": {
+    "socialLabel": "[social]",
+    "social": "instagram · tiktok",
+    "reachLabel": "[contato]",
+    "reach": "whatsapp · e-mail",
+    "locationLabel": "[local]",
+    "location": "guarujá, sp — brasil"
+  }
+}

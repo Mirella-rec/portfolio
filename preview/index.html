@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mirella Iezzi</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23F6F3EC'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='22' fill='%232B2A26'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-BSXJQkbC.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bj_rQ6bj.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav-sig" href="#abertura" data-i18n="signature"></a>
+    <nav class="nav-links">
+      <a href="#sobre" data-i18n="nav.sobre"></a>
+      <a href="#projetos" data-i18n="nav.projetos"></a>
+      <a href="#servicos" data-i18n="nav.servicos"></a>
+      <a href="#contato" data-i18n="nav.contato"></a>
+      <button class="lang" id="lang" type="button" data-i18n="nav.lang" data-i18n-aria="nav.langLabel"></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Abertura -->
+    <section class="hero" id="abertura">
+      <p class="rec"><i aria-hidden="true"></i><span data-i18n="hero.kicker"></span></p>
+      <h1 class="signature" data-i18n="signature"></h1>
+      <p class="lede" data-i18n="hero.lede"></p>
+      <div class="slot slot-collage">
+        <span class="tag tag-rosa" data-i18n="soon"></span>
+        <p data-i18n="hero.placeholder"></p>
+      </div>
+    </section>
+
+    <!-- 2. Sobre -->
+    <section class="section" id="sobre">
+      <header class="sec-head">
+        <span class="sec-num">01</span>
+        <h2 data-i18n="sobre.title"></h2>
+      </header>
+      <div class="slot">
+        <span class="tag tag-rosa" data-i18n="soon"></span>
+        <p data-i18n="sobre.placeholder"></p>
+      </div>
+    </section>
+
+    <!-- 3. Projetos: árvore de pastas -->
+    <section class="section" id="projetos">
+      <header class="sec-head">
+        <span class="sec-num">02</span>
+        <h2 data-i18n="projetos.title"></h2>
+      </header>
+      <p class="sec-kicker" data-i18n="projetos.kicker"></p>
+
+      <div class="finder">
+        <div class="finder-bar">
+          <div class="finder-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="finder-path">~ / mirella / <b data-i18n="projetos.path"></b></div>
+        </div>
+        <div class="finder-body">
+          <nav class="finder-side" id="tree-side">
+            <h4 data-i18n="projetos.sidebar"></h4>
+          </nav>
+          <div class="finder-stage-wrap">
+            <div class="tree-stage" id="tree-stage"><canvas id="tree-canvas"></canvas></div>
+            <button class="replay" id="tree-replay" type="button" data-i18n="projetos.replay"></button>
+          </div>
+        </div>
+        <div class="finder-status"><span id="tree-count"></span><span data-i18n="projetos.statusNote"></span></div>
+
+        <div class="folder-panel" id="folder-panel" role="dialog" aria-labelledby="folder-title">
+          <header>
+            <h3 id="folder-title"></h3>
+            <button type="button" id="folder-close" data-i18n="projetos.close"></button>
+          </header>
+          <div class="folder-reel" id="folder-reel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Serviços -->
+    <section class="section" id="servicos">
+      <header class="sec-head">
+        <span class="sec-num">03</span>
+        <h2 data-i18n="servicos.title"></h2>
+      </header>
+      <div class="slot">
+        <span class="tag tag-rosa" data-i18n="soon"></span>
+        <p data-i18n="servicos.placeholder"></p>
+      </div>
+    </section>
+
+    <!-- 5. Contato -->
+    <section class="section" id="contato">
+      <header class="sec-head">
+        <span class="sec-num">04</span>
+        <h2 data-i18n="contato.title"></h2>
+      </header>
+      <p class="sec-kicker" data-i18n="contato.kicker"></p>
+      <div class="contact-actions">
+        <a class="btn" id="whatsapp" href="#contato" data-i18n="contato.whatsapp"></a>
+        <a class="link" href="#contato" data-i18n="contato.instagram"></a>
+        <a class="link" href="#contato" data-i18n="contato.email"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-block">
+      <span class="footer-label" data-i18n="footer.socialLabel"></span>
+      <span data-i18n="footer.social"></span>
+    </div>
+    <div class="footer-block">
+      <span class="footer-label" data-i18n="footer.reachLabel"></span>
+      <span data-i18n="footer.reach"></span>
+    </div>
+    <div class="footer-block">
+      <span class="footer-label" data-i18n="footer.locationLabel"></span>
+      <span data-i18n="footer.location"></span>
+    </div>
+    <p class="footer-sig" data-i18n="signature"></p>
+  </footer>
+
+</body>
+</html>
