@@ -54,9 +54,32 @@ Não é caótico: é colagem com curadoria.
 - Neel Saswade (`referencias/neel-saswade-home.png`): fundo quadriculado, serifa itálica, árvore e paisagem ilustradas.
 - Hungry Tiger (DESIGN.md): só a lógica do objeto guiado por scroll e a tipografia em escala de pôster. **A paleta e as fontes do Hungry Tiger NÃO serão usadas.**
 
-**Identidade visual:** a Mirella não tem marca pessoal ainda.
-Paleta, fontes e logo/assinatura serão criados junto com o site.
-Enquanto não forem definidos, use tokens provisórios em CSS (`:root`) para facilitar a troca.
+**Identidade visual (aprovada em 21/10):**
+
+- **Assinatura:** *Mirella Iezzi*, sempre em Playfair Display itálico.
+- **Fontes (Google Fonts):**
+  - **Playfair Display**: nome, títulos e textos de apresentação. Itálico para a assinatura e destaques.
+  - **DM Mono**: menu, legendas dos vídeos, botões, etiquetas, timecode. Sempre em minúsculas, tracking leve (~0.04em).
+  - Não usar Playfair em textos menores que 15px.
+- **Paleta:**
+
+```css
+:root {
+  --papel:  #F6F3EC; /* fundo off-white */
+  --grade:  #E6E0D3; /* linhas do papel quadriculado (~20px) */
+  --tinta:  #2B2A26; /* texto, botão principal */
+  --rosa:   #F4D3DB; /* destaque: etiquetas, fitas, realces */
+  --rosa-texto: #8A4A5C; /* texto sobre o rosa */
+  --folha:  #6B7D4A; /* verde da árvore, detalhes, REC */
+  --musgo:  #3E4F2A; /* verde escuro: texto sobre verde claro, sombras da árvore */
+  --folha-clara: #DCE3CF; /* fundo de etiqueta verde */
+}
+```
+
+- **Componentes base:**
+  - botão principal (WhatsApp): pílula em `--tinta` com texto `--papel`, DM Mono;
+  - etiquetas: pílulas em `--rosa` com texto `--rosa-texto`, ou `--folha-clara` com `--musgo`.
+- Sem sombras pesadas nem gradientes. A profundidade vem da colagem: recortes, fita e grain.
 
 ## 4. Estrutura do site
 
@@ -122,7 +145,8 @@ Se ela pedir para "voltar para a versão de ontem", recupere pelo histórico.
 
 ## 8. Pendências
 
-- [ ] Definir nome/assinatura, paleta e fontes da identidade pessoal.
+- [x] Definir nome/assinatura, paleta e fontes da identidade pessoal.
+- [ ] Desenhar logo/monograma (opcional) e o estilo das ilustrações (árvore e personagens).
 - [ ] Separar e nomear os vídeos por galho/projeto.
 - [ ] Gerar previews e capas dos vídeos.
 - [ ] Confirmar quais clientes podem ser citados por nome.
