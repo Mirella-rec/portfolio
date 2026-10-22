@@ -42,9 +42,16 @@ Não é caótico: é colagem com curadoria.
 4. **Cursor customizado.** Muda sobre os vídeos (ex.: vira "PLAY").
 5. **Grain e recortes.** Granulado de filme sutil e elementos de papel recortado e fita sobre fotos e vídeos.
 
+**Decisões visuais já tomadas (21/10):**
+- Fundo off-white com **grade fina de papel quadriculado** (referência: `referencias/neel-saswade-home.png`).
+- Tipografia na linha da mesma referência: **serifa elegante, com o nome em itálico**, e texto curto.
+- **Árvore orgânica ilustrada** como elo visual: a árvore do rodapé/paisagem conversa com a árvore de pastas da aba Projetos.
+  As duas devem parecer da mesma família.
+
 **Referências de usabilidade:**
 - heatbureau.com/projects: nav mínima em minúsculas, pouco texto, rodapé em blocos rotulados ([social], [reach], [location]).
 - barbianaliu.com: layout editorial/colagem.
+- Neel Saswade (`referencias/neel-saswade-home.png`): fundo quadriculado, serifa itálica, árvore e paisagem ilustradas.
 - Hungry Tiger (DESIGN.md): só a lógica do objeto guiado por scroll e a tipografia em escala de pôster. **A paleta e as fontes do Hungry Tiger NÃO serão usadas.**
 
 **Identidade visual:** a Mirella não tem marca pessoal ainda.
