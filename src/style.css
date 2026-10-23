@@ -425,3 +425,8 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
   .blob, .gfolder-front::after { animation: none; }
   .gcard { transition: none; opacity: 1; transform: none; }
 }
+
+/* Título da seção Projetos: caixa alta, centralizado, com mais respiro até a primeira pasta */
+#projetos .sec-head { flex-direction: column; align-items: center; gap: 6px; margin-bottom: 64px; text-align: center; }
+#projetos .sec-head h2 { text-transform: uppercase; letter-spacing: -.01em; }
+@media (max-width: 700px) { #projetos .sec-head { margin-bottom: 48px; } }
