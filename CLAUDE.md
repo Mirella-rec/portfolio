@@ -100,6 +100,7 @@ Não é caótico: é colagem com curadoria.
    - Título no mesmo estilo de PROJETOS (Playfair reta, caixa alta, centralizado, sem número).
    - História curta em **DM Mono** (3 parágrafos) sobre a **paixão pelo audiovisual** (atualizado em 22/10).
      A Spencive (criada aos **16 anos**) é só o gancho de onde veio a habilidade de editar; não falar do ROI da Spencive.
+     Texto escrito pela Mirella (22/10). O 2º parágrafo usa o gancho "gestor e criador de conteúdo" para apresentar o serviço de social media.
      Fecha dizendo que ela atende **clientes de todo o Brasil como editora remota** (nunca dizer que trabalha só em Guarujá).
      As palavras "acendem" conforme o scroll; números que contam ao aparecer (`src/about.js`).
    - Uma forma orgânica de vidro rosa-bebê **vaga livremente só dentro do bloco da história** (não segue o dedo nem o scroll).
