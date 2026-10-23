@@ -70,7 +70,9 @@ Não é caótico: é colagem com curadoria.
 - **Assinatura:** *Mirella Iezzi*, sempre em Playfair Display itálico.
 - **Fontes (Google Fonts):**
   - **Playfair Display**: nome, títulos e textos de apresentação. Itálico para a assinatura e destaques.
-  - **DM Mono**: menu, legendas dos vídeos, botões, etiquetas, timecode. Sempre em minúsculas, tracking leve (~0.04em).
+  - **DM Mono**: menu, legendas dos vídeos, botões, etiquetas, timecode. Tracking leve (~0.04em).
+    **Todos os textos começam com letra maiúscula** e nomes próprios ficam com maiúscula (decisão de 22/10; antes era tudo em minúsculas).
+    Os títulos de seção QUEM SOU EU e PROJETOS continuam em caixa alta.
   - Não usar Playfair em textos menores que 15px.
 - **Paleta:**
 
@@ -100,6 +102,7 @@ Não é caótico: é colagem com curadoria.
    - Título no mesmo estilo de PROJETOS (Playfair reta, caixa alta, centralizado, sem número).
    - História curta em **DM Mono** (3 parágrafos) sobre a **paixão pelo audiovisual** (atualizado em 22/10).
      A Spencive (criada aos **16 anos**) é só o gancho de onde veio a habilidade de editar; não falar do ROI da Spencive.
+     Texto escrito pela Mirella (22/10). O 2º parágrafo usa o gancho "gestor e criador de conteúdo" para apresentar o serviço de social media.
      Fecha dizendo que ela atende **clientes de todo o Brasil como editora remota** (nunca dizer que trabalha só em Guarujá).
      As palavras "acendem" conforme o scroll; números que contam ao aparecer (`src/about.js`).
    - Uma forma orgânica de vidro rosa-bebê **vaga livremente só dentro do bloco da história** (não segue o dedo nem o scroll).

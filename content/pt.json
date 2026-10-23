@@ -3,127 +3,127 @@
     "title": "Mirella Iezzi — videomaker"
   },
   "signature": "Mirella Iezzi",
-  "soon": "em breve",
+  "soon": "Em breve",
   "nav": {
-    "sobre": "sobre",
-    "projetos": "projetos",
-    "servicos": "serviços",
-    "contato": "contato",
-    "lang": "en",
-    "langLabel": "switch to english"
+    "sobre": "Sobre",
+    "projetos": "Projetos",
+    "servicos": "Serviços",
+    "contato": "Contato",
+    "lang": "EN",
+    "langLabel": "Switch to English"
   },
   "hero": {
-    "kicker": "rec · videomaker e editora · atendo todo o brasil",
+    "kicker": "REC · videomaker e editora · atendo todo o Brasil",
     "lede": "Captação, roteiro e edição de vídeos verticais para moda, beleza, eventos e social media.",
-    "placeholder": "colagem animada da abertura"
+    "placeholder": "Colagem animada da abertura"
   },
   "sobre": {
-    "title": "quem sou eu",
+    "title": "Quem sou eu",
     "story": [
       "O audiovisual sempre foi o meu jeito de contar histórias. Comecei a editar aos 16 anos, quando criei a Spencive, minha marca de roupas. Precisava de vídeos para apresentar as peças e aprendi fazendo, do roteiro ao corte final.",
-      "A marca virou minha escola. Levei dali o cuidado de quem é gestor e de conteúdo. Além de entregar um trabalho do qual me orgulho.",
-      "Hoje sou videomaker e editora. Capto e edito vídeos verticais para marcas de moda, eventos e festivais e atendo clientes de todo o Brasil como editora remota."
+      "A marca virou minha escola. Levei dali o cuidado de quem é gestor e criador de conteúdo, além de entregar um trabalho do qual me orgulho. Foi daí que nasceu também o meu trabalho como social media: planejo, crio e gerencio o conteúdo de marcas de moda, beleza e saúde nas redes.",
+      "Hoje sou videomaker, editora e social media. Capto e edito vídeos verticais para marcas de moda, eventos e festivais e atendo clientes de todo o Brasil como editora remota."
     ],
     "stats": [
       {
         "n": 1200,
         "pre": "+",
-        "label": "vídeos roteirizados, captados e editados em 9 meses"
+        "label": "Vídeos roteirizados, captados e editados em 9 meses"
       },
       {
         "big": "Brasil",
-        "label": "edição remota para clientes de todo o país"
+        "label": "Edição remota para clientes de todo o país"
       },
       {
-        "big": "festivais",
+        "big": "Festivais",
         "label": "Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama)"
       },
       {
         "big": "ESPM",
-        "label": "marketing digital avançado: growth, mídia paga e testes A/B, inteligência de dados com jornadas e KPIs, branding e comunidade.",
-        "note": "também sou formada em técnico de informática pela Microcamp e em inglês avançado pelo CNA."
+        "label": "Marketing digital avançado: growth, mídia paga e testes A/B, inteligência de dados com jornadas e KPIs, branding e comunidade.",
+        "note": "Também sou formada em técnico de informática pela Microcamp e em inglês avançado pelo CNA."
       }
     ],
-    "skills": "captação · roteiro · edição · social media"
+    "skills": "Captação · roteiro · edição · social media"
   },
   "projetos": {
-    "title": "projetos",
-    "path": "projetos",
-    "sidebar": "galhos",
-    "replay": "↻ crescer de novo",
+    "title": "Projetos",
+    "path": "Projetos",
+    "sidebar": "Galhos",
+    "replay": "↻ Crescer de novo",
     "count": "{branches} galhos · {folders} pastas",
-    "statusNote": "vídeos em breve",
-    "close": "fechar ✕",
-    "video": "vídeo 9:16",
-    "take": "take",
+    "statusNote": "Vídeos em breve",
+    "close": "Fechar ✕",
+    "video": "Vídeo 9:16",
+    "take": "Take",
     "branches": [
       {
         "id": "moda",
-        "label": "moda",
+        "label": "Moda",
         "items": [
-          "casa martin medeiros",
-          "spencive",
-          "salão casa moda"
+          "Casa Martin Medeiros",
+          "Spencive",
+          "Salão Casa Moda"
         ],
         "desc": "Vídeos para marcas autorais de moda: lookbooks, bastidores de ateliê e lançamentos de coleção."
       },
       {
         "id": "eventos",
-        "label": "eventos",
+        "label": "Eventos",
         "items": [
-          "melhor dia",
-          "coberturas",
-          "story making"
+          "Melhor Dia",
+          "Coberturas",
+          "Story making"
         ],
         "desc": "Coberturas de festivais e eventos, com story making ao vivo e aftermovies."
       },
       {
         "id": "social",
-        "label": "edição",
+        "label": "Edição",
         "items": [
-          "moda",
-          "beleza",
-          "saúde"
+          "Moda",
+          "Beleza",
+          "Saúde"
         ],
         "desc": "Edição de Reels e vídeos verticais para moda, beleza e saúde, com ritmo pensado para prender quem assiste."
       },
       {
         "id": "teatro",
-        "label": "shows",
+        "label": "Shows",
         "items": [
-          "procópio ferreira"
+          "Procópio Ferreira"
         ],
         "desc": "Registros de espetáculos e apresentações ao vivo, do palco aos bastidores."
       },
       {
         "id": "retrospectivas",
-        "label": "retrospectivas",
+        "label": "Retrospectivas",
         "items": [
-          "aniversário de 15 anos"
+          "Aniversário de 15 anos"
         ],
         "desc": "Retrospectivas em vídeo para aniversários e celebrações, contadas com fotos e vídeos de quem viveu a história."
       }
     ],
-    "open": "abrir",
-    "closeLabel": "fechar pasta"
+    "open": "Abrir",
+    "closeLabel": "Fechar pasta"
   },
   "servicos": {
-    "title": "serviços",
-    "placeholder": "captação, roteiro, edição, social media e cobertura de eventos"
+    "title": "Serviços",
+    "placeholder": "Captação, roteiro, edição, social media e cobertura de eventos"
   },
   "contato": {
-    "title": "contato",
-    "kicker": "vamos gravar alguma coisa juntos?",
-    "whatsapp": "chamar no whatsapp",
-    "instagram": "instagram",
-    "email": "e-mail"
+    "title": "Contato",
+    "kicker": "Vamos gravar alguma coisa juntos?",
+    "whatsapp": "Chamar no WhatsApp",
+    "instagram": "Instagram",
+    "email": "E-mail"
   },
   "footer": {
-    "socialLabel": "[social]",
-    "social": "instagram · tiktok",
-    "reachLabel": "[contato]",
-    "reach": "whatsapp · e-mail",
-    "locationLabel": "[local]",
-    "location": "guarujá, sp · atendimento em todo o brasil"
+    "socialLabel": "[Social]",
+    "social": "Instagram · TikTok",
+    "reachLabel": "[Contato]",
+    "reach": "WhatsApp · e-mail",
+    "locationLabel": "[Local]",
+    "location": "Guarujá, SP · atendimento em todo o Brasil"
   }
 }
