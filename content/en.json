@@ -92,10 +92,17 @@
         "id": "teatro",
         "label": "shows",
         "items": [
-          "procópio ferreira",
-          "retrospectives"
+          "procópio ferreira"
         ],
         "desc": "Recordings of stage performances and live shows, from the stage to backstage."
+      },
+      {
+        "id": "retrospectivas",
+        "label": "retrospectives",
+        "items": [
+          "15th birthday"
+        ],
+        "desc": "Video retrospectives for birthdays and celebrations, told through the photos and videos of the people who lived them."
       }
     ],
     "open": "open",

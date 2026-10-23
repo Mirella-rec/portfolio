@@ -104,16 +104,17 @@ Não é caótico: é colagem com curadoria.
    - Destaques: +1.200 vídeos, 70%, festivais e **ESPM** (Marketing Digital Avançado: growth, mídia paga e testes A/B,
      inteligência de dados com jornadas e KPIs, branding e comunidade). Embaixo da ESPM, sem ênfase:
      técnico de informática pela Microcamp e inglês avançado pelo CNA.
-   - Ainda confirmar com a Mirella se pode citar Chilli Beans, Smoke e Amir Slama.
+   - Nomes de marcas liberados pela Mirella (22/10): Chilli Beans, Smoke, Amir Slama, Casa Martin Medeiros. Só os nomes; logos não sem autorização.
    - Marca própria Spencive, criada aos 16 anos, com 70% de ROI em 3 meses.
    - Mais de 1.200 vídeos roteirizados, captados e editados em 9 meses na Casa Martin Medeiros.
    - Festivais Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama).
    - Estudante de marketing digital na ESPM.
-3. **Projetos:** 4 pastas, nesta ordem e com estes nomes (decisão de 22/10): **moda, eventos, edição, shows**.
+3. **Projetos:** 5 pastas, nesta ordem e com estes nomes (decisão de 22/10): **moda, eventos, edição, shows, retrospectivas**.
    - Moda: Casa Martin Medeiros, Spencive, Salão Casa Moda.
    - Eventos: Melhor Dia, coberturas, story making.
    - Edição: Reels e vídeos verticais (moda, beleza, saúde).
-   - Shows: Teatro Procópio Ferreira, retrospectivas.
+   - Shows: Teatro Procópio Ferreira.
+   - Retrospectivas: aniversário de 15 anos.
    - Os projetos dentro de cada pasta ainda são provisórios: pedir à Mirella a lista real.
    - Ao abrir uma pasta: **só vídeos + legenda curta**, sem case longo.
 4. **Serviços:** captação, roteiro, edição, social media, cobertura de eventos.
@@ -173,7 +174,7 @@ Se ela pedir para "voltar para a versão de ontem", recupere pelo histórico.
 - [ ] Desenhar logo/monograma (opcional) e o estilo das ilustrações (árvore e personagens).
 - [ ] Separar e nomear os vídeos por galho/projeto.
 - [ ] Gerar previews e capas dos vídeos.
-- [ ] Confirmar quais clientes podem ser citados por nome.
+- [x] Confirmar quais clientes podem ser citados por nome (liberados em 22/10: Chilli Beans, Smoke, Amir Slama, Casa Martin Medeiros).
 - [ ] Escrever os textos (PT e EN).
 - [ ] Definir o número de WhatsApp e a mensagem pronta.
 - [ ] Escolher hospedagem e domínio (mais para frente).

@@ -92,10 +92,17 @@
         "id": "teatro",
         "label": "shows",
         "items": [
-          "procópio ferreira",
-          "retrospectivas"
+          "procópio ferreira"
         ],
         "desc": "Registros de espetáculos e apresentações ao vivo, do palco aos bastidores."
+      },
+      {
+        "id": "retrospectivas",
+        "label": "retrospectivas",
+        "items": [
+          "aniversário de 15 anos"
+        ],
+        "desc": "Retrospectivas em vídeo para aniversários e celebrações, contadas com fotos e vídeos de quem viveu a história."
       }
     ],
     "open": "abrir",

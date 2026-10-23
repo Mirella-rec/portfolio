@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Mirella Iezzi — videomaker"
+  },
+  "signature": "Mirella Iezzi",
+  "soon": "em breve",
+  "nav": {
+    "sobre": "sobre",
+    "projetos": "projetos",
+    "servicos": "serviços",
+    "contato": "contato",
+    "lang": "en",
+    "langLabel": "switch to english"
+  },
+  "hero": {
+    "kicker": "rec · videomaker em guarujá, sp",
+    "lede": "Captação, roteiro e edição de vídeos verticais para moda, beleza, eventos e social media.",
+    "placeholder": "colagem animada da abertura"
+  },
+  "sobre": {
+    "title": "quem sou eu",
+    "story": [
+      "aos 16 anos criei a Spencive, minha marca de moda. cuidava de tudo, do marketing à operação, e foi ali que aprendi a editar: cada vídeo precisava apresentar a marca e vender.",
+      "em 3 meses, a Spencive teve 70% de retorno sobre o investimento. ser dona de um negócio tão cedo me ensinou a cumprir prazo, a responder pelo resultado e a tratar cada projeto como se fosse meu.",
+      "hoje sou videomaker em Guarujá. roteirizo, capto e edito vídeos verticais para marcas de moda, eventos e festivais, do briefing ao post."
+    ],
+    "stats": [
+      {
+        "n": 1200,
+        "pre": "+",
+        "label": "vídeos roteirizados, captados e editados em 9 meses"
+      },
+      {
+        "n": 70,
+        "suf": "%",
+        "label": "de retorno sobre o investimento em 3 meses com a Spencive, marca que criei aos 16 anos"
+      },
+      {
+        "big": "festivais",
+        "label": "Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama)"
+      },
+      {
+        "big": "ESPM",
+        "label": "marketing digital avançado: growth, mídia paga e testes A/B, inteligência de dados com jornadas e KPIs, branding e comunidade.",
+        "note": "também sou formada em técnico de informática pela Microcamp e em inglês avançado pelo CNA."
+      }
+    ],
+    "skills": "captação · roteiro · edição · social media"
+  },
+  "projetos": {
+    "title": "projetos",
+    "path": "projetos",
+    "sidebar": "galhos",
+    "replay": "↻ crescer de novo",
+    "count": "{branches} galhos · {folders} pastas",
+    "statusNote": "vídeos em breve",
+    "close": "fechar ✕",
+    "video": "vídeo 9:16",
+    "take": "take",
+    "branches": [
+      {
+        "id": "moda",
+        "label": "moda",
+        "items": [
+          "casa martin medeiros",
+          "spencive",
+          "salão casa moda"
+        ],
+        "desc": "Vídeos para marcas autorais de moda: lookbooks, bastidores de ateliê e lançamentos de coleção."
+      },
+      {
+        "id": "eventos",
+        "label": "eventos",
+        "items": [
+          "melhor dia",
+          "coberturas",
+          "story making"
+        ],
+        "desc": "Coberturas de festivais e eventos, com story making ao vivo e aftermovies."
+      },
+      {
+        "id": "social",
+        "label": "edição",
+        "items": [
+          "moda",
+          "beleza",
+          "saúde"
+        ],
+        "desc": "Edição de Reels e vídeos verticais para moda, beleza e saúde, com ritmo pensado para prender quem assiste."
+      },
+      {
+        "id": "teatro",
+        "label": "shows",
+        "items": [
+          "procópio ferreira"
+        ],
+        "desc": "Registros de espetáculos e apresentações ao vivo, do palco aos bastidores."
+      },
+      {
+        "id": "retrospectivas",
+        "label": "retrospectivas",
+        "items": [
+          "aniversário de 15 anos"
+        ],
+        "desc": "Retrospectivas em vídeo para aniversários e celebrações, contadas com fotos e vídeos de quem viveu a história."
+      }
+    ],
+    "open": "abrir",
+    "closeLabel": "fechar pasta"
+  },
+  "servicos": {
+    "title": "serviços",
+    "placeholder": "captação, roteiro, edição, social media e cobertura de eventos"
+  },
+  "contato": {
+    "title": "contato",
+    "kicker": "vamos gravar alguma coisa juntos?",
+    "whatsapp": "chamar no whatsapp",
+    "instagram": "instagram",
+    "email": "e-mail"
+  },
+  "footer": {
+    "socialLabel": "[social]",
+    "social": "instagram · tiktok",
+    "reachLabel": "[contato]",
+    "reach": "whatsapp · e-mail",
+    "locationLabel": "[local]",
+    "location": "guarujá, sp — brasil"
+  }
+}

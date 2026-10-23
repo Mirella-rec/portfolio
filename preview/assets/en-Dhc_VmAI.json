@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Mirella Iezzi — videomaker"
+  },
+  "signature": "Mirella Iezzi",
+  "soon": "coming soon",
+  "nav": {
+    "sobre": "about",
+    "projetos": "projects",
+    "servicos": "services",
+    "contato": "contact",
+    "lang": "pt",
+    "langLabel": "mudar para português"
+  },
+  "hero": {
+    "kicker": "rec · videomaker in guarujá, brazil",
+    "lede": "Filming, scripting and editing vertical video for fashion, beauty, events and social media.",
+    "placeholder": "animated opening collage"
+  },
+  "sobre": {
+    "title": "about me",
+    "story": [
+      "at 16 I started Spencive, my own fashion brand. I ran everything, from marketing to operations, and that is where I learned to edit: every video had to introduce the brand and sell.",
+      "in 3 months, Spencive reached a 70% return on investment. owning a business that early taught me to meet deadlines, to answer for results and to treat every project as if it were mine.",
+      "today I'm a videomaker in Guarujá, Brazil. I script, shoot and edit vertical video for fashion brands, events and festivals, from brief to post."
+    ],
+    "stats": [
+      {
+        "n": 1200,
+        "pre": "+",
+        "label": "videos scripted, shot and edited in 9 months"
+      },
+      {
+        "n": 70,
+        "suf": "%",
+        "label": "return on investment in 3 months with Spencive, the brand I started at 16"
+      },
+      {
+        "big": "festivals",
+        "label": "Melhor Dia (Chilli Beans, Smoke) and Salão Casa Moda (Amir Slama)"
+      },
+      {
+        "big": "ESPM",
+        "label": "advanced digital marketing: growth, paid media and A/B testing, data intelligence with journeys and KPIs, branding and community.",
+        "note": "I also hold a technical degree in IT from Microcamp and advanced English from CNA."
+      }
+    ],
+    "skills": "filming · scripting · editing · social media"
+  },
+  "projetos": {
+    "title": "projects",
+    "path": "projects",
+    "sidebar": "branches",
+    "replay": "↻ grow again",
+    "count": "{branches} branches · {folders} folders",
+    "statusNote": "videos coming soon",
+    "close": "close ✕",
+    "video": "9:16 video",
+    "take": "take",
+    "branches": [
+      {
+        "id": "moda",
+        "label": "fashion",
+        "items": [
+          "casa martin medeiros",
+          "spencive",
+          "salão casa moda"
+        ],
+        "desc": "Videos for independent fashion brands: lookbooks, atelier behind-the-scenes and collection launches."
+      },
+      {
+        "id": "eventos",
+        "label": "events",
+        "items": [
+          "melhor dia",
+          "coverage",
+          "story making"
+        ],
+        "desc": "Festival and event coverage, with live story making and aftermovies."
+      },
+      {
+        "id": "social",
+        "label": "editing",
+        "items": [
+          "fashion",
+          "beauty",
+          "health"
+        ],
+        "desc": "Reels and vertical video editing for fashion, beauty and health, paced to keep people watching."
+      },
+      {
+        "id": "teatro",
+        "label": "shows",
+        "items": [
+          "procópio ferreira"
+        ],
+        "desc": "Recordings of stage performances and live shows, from the stage to backstage."
+      },
+      {
+        "id": "retrospectivas",
+        "label": "retrospectives",
+        "items": [
+          "15th birthday"
+        ],
+        "desc": "Video retrospectives for birthdays and celebrations, told through the photos and videos of the people who lived them."
+      }
+    ],
+    "open": "open",
+    "closeLabel": "close folder"
+  },
+  "servicos": {
+    "title": "services",
+    "placeholder": "filming, scripting, editing, social media and event coverage"
+  },
+  "contato": {
+    "title": "contact",
+    "kicker": "shall we shoot something together?",
+    "whatsapp": "message on whatsapp",
+    "instagram": "instagram",
+    "email": "email"
+  },
+  "footer": {
+    "socialLabel": "[social]",
+    "social": "instagram · tiktok",
+    "reachLabel": "[reach]",
+    "reach": "whatsapp · email",
+    "locationLabel": "[location]",
+    "location": "guarujá, sp — brazil"
+  }
+}

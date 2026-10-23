@@ -7,6 +7,7 @@ const SHAPES = {
   eventos: { from: [0.50, 0.70], c: [0.70, 0.74], to: [0.85, 0.47], start: 1.2 },
   social: { from: [0.50, 0.55], c: [0.32, 0.52], to: [0.20, 0.20], start: 1.5 },
   teatro: { from: [0.50, 0.47], c: [0.70, 0.46], to: [0.80, 0.15], start: 1.8 },
+  retrospectivas: { from: [0.50, 0.62], c: [0.40, 0.66], to: [0.36, 0.86], start: 2.1 },
 };
 const TRUNK = { from: [0.50, 1.02], c: [0.47, 0.72], to: [0.50, 0.40], start: 0, dur: 1.3, w0: 3.4, w1: 1.6 };
 const BRANCH_DUR = 1.4;
