@@ -1,3 +1,4 @@
 # Changelog
 
 - **2026-10-21** — Primeira versão do site: fundo quadriculado, assinatura *Mirella Iezzi*, menu PT/EN, seções vazias (abertura, sobre, serviços, contato) e árvore de pastas pixelada na aba Projetos. Por quê: montar a base com a identidade aprovada para depois preencher conteúdo e vídeos.
+- **2026-10-22** — Projetos no celular: a árvore pixelada deu lugar a pastas de vidro fosco rosa-bebê, empilhadas na vertical e surgindo em fade-in no scroll; cada card mostra só o título do galho. Ao tocar, a pasta abre numa folha que desdobra como papel, com descrição e vídeos. Título "PROJETOS" em Playfair reta, caixa alta e centralizado, sem número nem texto de apoio. Por quê: a árvore ficava pequena e confusa no celular; a Mirella pediu algo mais clean e moderno, inspirado em liquid glass, progressive blur e dobradura de papel. No computador a árvore continua.
