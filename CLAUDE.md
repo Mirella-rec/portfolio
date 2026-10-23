@@ -40,8 +40,9 @@ Não é caótico: é colagem com curadoria.
    - Cada galho é uma área de atuação e cada pasta abre um projeto.
    - Referência original: gravação do Inspora.
    - **No celular (≤700px) a árvore não aparece** (decisão de 22/10). No lugar entram cards de vidro (`src/deck.js`):
-     carrossel com curvatura 3D, um card por galho, gradiente "líquido" animado, pasta com frente de vidro fosco,
-     número grande de pastas (estilo métrica de dashboard), desfoque progressivo no rodapé do card.
+     um card por galho, **empilhados na vertical, sem sobrepor**, que surgem em fade-in conforme a pessoa rola a tela.
+     Cada card: título grande do galho no topo (sem numeração), gradiente "líquido" animado, pasta rosa com frente de vidro fosco
+     (sem folha quadriculada dentro), lista dos projetos embaixo e desfoque progressivo no rodapé.
      Ao tocar, a pasta abre numa folha que desdobra como papel (arrastar para baixo fecha).
      Referências: cards com gradiente e liquid glass, dobradura de papel (promo iPhone/Plasma), progressive blur + frosted glass.
 4. **Cursor customizado.** Muda sobre os vídeos (ex.: vira "PLAY").

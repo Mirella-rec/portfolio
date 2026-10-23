@@ -69,8 +69,7 @@
         ]
       }
     ],
-    "deckHint": "deslize ↔ · toque para abrir",
-    "folders": "pastas",
+    "deckHint": "role para ver · toque para abrir",
     "open": "abrir",
     "closeLabel": "fechar pasta"
   },

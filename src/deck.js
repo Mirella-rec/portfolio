@@ -1,4 +1,5 @@
-// Projetos no celular (≤700px): baralho de cards de vidro fosco.
+// Projetos no celular (≤700px): pastas de vidro fosco empilhadas na vertical,
+// cada uma surge em fade-in conforme a pessoa rola a tela.
 // Cada card é um galho; o fundo é um gradiente "líquido" nas cores da marca,
 // a pasta tem frente de vidro, e o rodapé do card tem desfoque progressivo.
 // Ao tocar, a pasta abre numa folha que desdobra como papel.
@@ -9,8 +10,6 @@ const PALETTES = {
   social: ["#FBE3D6", "var(--rosa)", "var(--folha-clara)"],
   teatro: ["var(--folha-media)", "var(--folha-clara)", "var(--rosa-sombra)"],
 };
-
-const pad = n => String(n).padStart(2, "0");
 
 function liquid(colors) {
   const l = document.createElement("div");
@@ -36,106 +35,58 @@ function progressiveBlur() {
 export function createDeck({ root, sheet }) {
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const track = root.querySelector(".deck-track");
-  const dots = root.querySelector(".deck-dots");
   let text = null;
   let cards = [];
 
   // ---------- cards ----------
   function render() {
     track.innerHTML = "";
-    dots.innerHTML = "";
     cards = text.branches.map((b, i) => {
       const card = document.createElement("button");
       card.type = "button";
       card.className = "gcard";
       card.style.setProperty("--i", i);
-      card.setAttribute("aria-label", `${b.label} — ${b.items.length} ${text.folders}`);
+      card.setAttribute("aria-label", `${text.open}: ${b.label}`);
 
       card.appendChild(liquid(PALETTES[b.id] || PALETTES.moda));
 
       const top = document.createElement("div");
       top.className = "gcard-top";
-      top.innerHTML = `<span class="gcard-idx">${pad(i + 1)} / ${pad(text.branches.length)}</span><span class="gcard-pill"></span>`;
+      top.innerHTML = `<h3 class="gcard-title"></h3><span class="gcard-pill"></span>`;
+      top.querySelector(".gcard-title").textContent = b.label;
       top.querySelector(".gcard-pill").textContent = text.open;
-
-      const metric = document.createElement("div");
-      metric.className = "gcard-metric";
-      metric.innerHTML = `<b data-count="${b.items.length}">00</b><small></small>`;
-      metric.querySelector("small").textContent = text.folders;
 
       const folder = document.createElement("div");
       folder.className = "gfolder";
       folder.setAttribute("aria-hidden", "true");
-      folder.innerHTML = `<span class="gfolder-back"></span><span class="gfolder-paper"></span><span class="gfolder-front"></span>`;
+      folder.innerHTML = `<span class="gfolder-back"></span><span class="gfolder-front"></span>`;
 
       const foot = document.createElement("div");
       foot.className = "gcard-foot";
-      foot.innerHTML = `<h3></h3><ul></ul>`;
-      foot.querySelector("h3").textContent = b.label;
+      foot.innerHTML = `<ul></ul>`;
       b.items.forEach(name => {
         const li = document.createElement("li");
         li.textContent = name;
         foot.querySelector("ul").appendChild(li);
       });
 
-      card.append(top, metric, folder, progressiveBlur(), foot);
-      card.addEventListener("click", () => {
-        if (card.classList.contains("side")) {
-          card.scrollIntoView({ behavior: reduced ? "auto" : "smooth", inline: "center", block: "nearest" });
-          return;
-        }
-        openSheet(b, i, card);
-      });
+      card.append(top, folder, progressiveBlur(), foot);
+      card.addEventListener("click", () => openSheet(b, i, card));
       track.appendChild(card);
-
-      const d = document.createElement("i");
-      dots.appendChild(d);
+      reveal.observe(card);
       return card;
     });
-    requestAnimationFrame(curve);
   }
 
-  // ---------- curvatura 3D no deslize ----------
-  let raf = 0;
-  function curve() {
-    raf = 0;
-    const r = track.getBoundingClientRect();
-    const mid = r.left + r.width / 2;
-    let active = 0, best = Infinity;
-    cards.forEach((c, i) => {
-      const cr = c.getBoundingClientRect();
-      const off = (cr.left + cr.width / 2 - mid) / cr.width; // -1 … 1
-      const a = Math.max(-1.4, Math.min(1.4, off));
-      c.style.setProperty("--off", a.toFixed(3));
-      c.classList.toggle("side", Math.abs(off) > 0.5);
-      if (Math.abs(off) < best) { best = Math.abs(off); active = i; }
+  // ---------- cada pasta surge em fade-in ao entrar na tela ----------
+  const reveal = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add("in");
+      e.target.addEventListener("transitionend", () => e.target.classList.add("settled"), { once: true });
+      reveal.unobserve(e.target);
     });
-    [...dots.children].forEach((d, i) => d.classList.toggle("on", i === active));
-  }
-  track.addEventListener("scroll", () => { if (!raf) raf = requestAnimationFrame(curve); }, { passive: true });
-  addEventListener("resize", () => { if (!raf) raf = requestAnimationFrame(curve); });
-
-  // ---------- entrada: cards sobem e números contam ----------
-  let entered = false;
-  function enter() {
-    entered = true;
-    root.classList.add("in");
-    cards.forEach((c, i) => {
-      const b = c.querySelector("[data-count]");
-      const end = +b.dataset.count;
-      if (reduced) { b.textContent = pad(end); return; }
-      const t0 = performance.now() + 250 + i * 120;
-      const tick = now => {
-        const p = Math.min(1, Math.max(0, (now - t0) / 900));
-        b.textContent = pad(Math.round(end * (1 - Math.pow(1 - p, 3))));
-        if (p < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-    });
-  }
-  new IntersectionObserver(([e]) => {
-    if (e.isIntersecting && !entered && cards.length) enter();
-  }, { threshold: 0.25 }).observe(root);
+  }, { threshold: 0.2, rootMargin: "0px 0px -8% 0px" });
 
   // ---------- folha que desdobra ----------
   const fold = sheet.querySelector(".sheet-fold");
@@ -147,7 +98,7 @@ export function createDeck({ root, sheet }) {
   function openSheet(b, i, card) {
     lastCard = card;
     sheet.querySelector(".sheet-title").textContent = b.label;
-    sheet.querySelector(".sheet-sub").textContent = `${pad(b.items.length)} ${text.folders} · ${text.statusNote}`;
+    sheet.querySelector(".sheet-sub").textContent = text.statusNote;
     media.querySelector(".liquid")?.remove();
     media.prepend(liquid(PALETTES[b.id] || PALETTES.moda));
 
@@ -223,8 +174,8 @@ export function createDeck({ root, sheet }) {
     setContent(projetos) {
       text = projetos;
       closeSheet();
+      reveal.disconnect();
       render();
-      if (entered) { entered = false; enter(); }
     },
   };
 }
