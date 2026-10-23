@@ -39,6 +39,11 @@ Não é caótico: é colagem com curadoria.
    - Pastas e arquivos "brotam" ao longo de galhos orgânicos.
    - Cada galho é uma área de atuação e cada pasta abre um projeto.
    - Referência original: gravação do Inspora.
+   - **No celular (≤700px) a árvore não aparece** (decisão de 22/10). No lugar entram cards de vidro (`src/deck.js`):
+     carrossel com curvatura 3D, um card por galho, gradiente "líquido" animado, pasta com frente de vidro fosco,
+     número grande de pastas (estilo métrica de dashboard), desfoque progressivo no rodapé do card.
+     Ao tocar, a pasta abre numa folha que desdobra como papel (arrastar para baixo fecha).
+     Referências: cards com gradiente e liquid glass, dobradura de papel (promo iPhone/Plasma), progressive blur + frosted glass.
 4. **Cursor customizado.** Muda sobre os vídeos (ex.: vira "PLAY").
 5. **Grain e recortes.** Granulado de filme sutil e elementos de papel recortado e fita sobre fotos e vídeos.
 
@@ -80,6 +85,7 @@ Não é caótico: é colagem com curadoria.
   - botão principal (WhatsApp): pílula em `--tinta` com texto `--papel`, DM Mono;
   - etiquetas: pílulas em `--rosa` com texto `--rosa-texto`, ou `--folha-clara` com `--musgo`.
 - Sem sombras pesadas nem gradientes. A profundidade vem da colagem: recortes, fita e grain.
+  - **Exceção (22/10):** os cards de vidro dos Projetos no celular usam gradientes suaves e vidro fosco, sempre só com as cores da paleta (rosa, verdes, papel). Nada de azul/roxo.
 
 ## 4. Estrutura do site
 

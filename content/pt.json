@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Mirella Iezzi — videomaker" },
+  "meta": {
+    "title": "Mirella Iezzi — videomaker"
+  },
   "signature": "Mirella Iezzi",
   "soon": "em breve",
   "nav": {
@@ -31,11 +33,46 @@
     "video": "vídeo 9:16",
     "take": "take",
     "branches": [
-      { "id": "moda", "label": "moda", "items": ["casa martin medeiros", "spencive", "salão casa moda"] },
-      { "id": "eventos", "label": "eventos", "items": ["melhor dia", "coberturas", "story making"] },
-      { "id": "social", "label": "social / reels", "items": ["moda", "beleza", "saúde"] },
-      { "id": "teatro", "label": "teatro", "items": ["procópio ferreira", "retrospectivas"] }
-    ]
+      {
+        "id": "moda",
+        "label": "moda",
+        "items": [
+          "casa martin medeiros",
+          "spencive",
+          "salão casa moda"
+        ]
+      },
+      {
+        "id": "eventos",
+        "label": "eventos",
+        "items": [
+          "melhor dia",
+          "coberturas",
+          "story making"
+        ]
+      },
+      {
+        "id": "social",
+        "label": "social / reels",
+        "items": [
+          "moda",
+          "beleza",
+          "saúde"
+        ]
+      },
+      {
+        "id": "teatro",
+        "label": "teatro",
+        "items": [
+          "procópio ferreira",
+          "retrospectivas"
+        ]
+      }
+    ],
+    "deckHint": "deslize ↔ · toque para abrir",
+    "folders": "pastas",
+    "open": "abrir",
+    "closeLabel": "fechar pasta"
   },
   "servicos": {
     "title": "serviços",

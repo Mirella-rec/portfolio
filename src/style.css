@@ -267,3 +267,205 @@ button { font: inherit; letter-spacing: inherit; text-transform: inherit; color:
   .grain, .rec i { animation: none; }
   .node { transition: none; }
 }
+
+/* =========================================================
+   Projetos no celular — cards de vidro (src/deck.js)
+   Liquid glass + gradiente líquido + desfoque progressivo.
+   Os gradientes usam só a paleta da marca (rosa, verdes, papel).
+   ========================================================= */
+.deck, .sheet { display: none; }
+
+@media (max-width: 700px) {
+  #projetos .finder { display: none; }
+  .deck { display: block; margin: 0 calc(var(--gutter) * -1); perspective: 900px; }
+  .sheet:not([hidden]) { display: block; }
+}
+
+.deck-track {
+  display: flex; gap: 14px;
+  overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scrollbar-width: none;
+  padding: 28px calc(50vw - min(35vw, 145px)) 22px;
+  transform-style: preserve-3d;
+}
+.deck-track::-webkit-scrollbar { display: none; }
+
+.gcard {
+  --off: 0;
+  position: relative; flex: 0 0 min(70vw, 290px); aspect-ratio: 3 / 4.3;
+  scroll-snap-align: center;
+  border: 0; padding: 18px; border-radius: 28px; overflow: hidden; isolation: isolate;
+  text-align: left; cursor: pointer;
+  display: flex; flex-direction: column;
+  background: rgba(255, 255, 255, .55);
+  /* curva: os cards laterais giram e recuam, como uma tela curva */
+  transform:
+    translateX(calc(var(--off) * -34%))
+    rotateY(calc(var(--off) * -24deg))
+    translateZ(calc(min(1.4, abs(var(--off))) * -60px))
+    scale(calc(1 - min(1.4, abs(var(--off))) * .06));
+  transition: transform .12s linear;
+  -webkit-tap-highlight-color: transparent;
+  /* entrada */
+  opacity: 0; translate: 0 60px; rotate: x 18deg;
+}
+/* fallback para navegadores sem abs() em calc */
+@supports not (width: calc(abs(-1px))) {
+  .gcard { transform: translateX(calc(var(--off) * -30%)) rotateY(calc(var(--off) * -24deg)) scale(.94); }
+}
+.deck.in .gcard {
+  opacity: 1; translate: 0 0; rotate: x 0deg;
+  transition: transform .12s linear, opacity .7s ease, translate .9s cubic-bezier(.2,.9,.2,1), rotate .9s cubic-bezier(.2,.9,.2,1);
+  transition-delay: 0s, calc(var(--i) * 110ms), calc(var(--i) * 110ms), calc(var(--i) * 110ms);
+}
+/* borda de vidro: fio claro + brilho iridescente suave nas cores da marca */
+.gcard::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 5; pointer-events: none;
+  padding: 1px;
+  background: conic-gradient(from calc(var(--off) * 90deg + 200deg),
+    rgba(255,255,255,.95), var(--rosa), rgba(255,255,255,.4), var(--folha-clara), rgba(255,255,255,.95));
+  -webkit-mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+.gcard.side { z-index: 0; } .gcard:not(.side) { z-index: 1; }
+.gcard:focus-visible { outline: 2px solid var(--rosa-texto); outline-offset: 4px; }
+
+/* gradiente líquido: manchas desfocadas que se movem devagar */
+.liquid { position: absolute; inset: -20%; z-index: -1; filter: blur(28px) saturate(1.15); }
+.blob {
+  position: absolute; width: 70%; aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, var(--c), transparent 68%);
+}
+.b1 { left: -5%; top: 0; animation: drift1 11s ease-in-out infinite alternate; }
+.b2 { right: -10%; top: 25%; animation: drift2 13s ease-in-out infinite alternate; }
+.b3 { left: 15%; bottom: -10%; animation: drift3 9s ease-in-out infinite alternate; }
+@keyframes drift1 { to { transform: translate(30%, 25%) scale(1.15); } }
+@keyframes drift2 { to { transform: translate(-35%, 10%) scale(.9); } }
+@keyframes drift3 { to { transform: translate(20%, -30%) scale(1.2); } }
+
+.gcard-top { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--suave); }
+.gcard-pill {
+  padding: 4px 10px; border-radius: 999px; color: var(--tinta);
+  background: rgba(255,255,255,.5); border: 1px solid rgba(255,255,255,.8);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+}
+
+/* número grande, como métrica de dashboard */
+.gcard-metric { margin-top: 18px; display: flex; align-items: flex-start; gap: 6px; }
+.gcard-metric b {
+  font-family: var(--serif); font-weight: 400; font-size: 64px; line-height: .85;
+  letter-spacing: -.03em; font-variant-numeric: tabular-nums;
+}
+.gcard-metric small { margin-top: 6px; font-size: 11px; color: var(--suave); }
+
+/* pasta de vidro: aba sólida atrás, folha de papel, frente fosca */
+.gfolder { position: relative; width: 58%; aspect-ratio: 1.3; margin: auto auto 0; }
+.gfolder-back {
+  position: absolute; inset: 8% 0 12% 0; border-radius: 10px;
+  background: linear-gradient(#B07385, var(--rosa-texto));
+}
+.gfolder-back::before {
+  content: ""; position: absolute; top: -12%; left: 0; width: 42%; height: 20%;
+  background: #B07385; border-radius: 8px 12px 0 0;
+}
+.gfolder-paper {
+  position: absolute; left: 10%; right: 10%; top: 4%; bottom: 30%; border-radius: 4px;
+  background: var(--papel);
+  background-image: linear-gradient(var(--grade) 1px, transparent 1px), linear-gradient(90deg, var(--grade) 1px, transparent 1px);
+  background-size: 8px 8px;
+  transform: rotate(-3deg); transition: transform .5s cubic-bezier(.3,1.5,.5,1);
+}
+.gfolder-front {
+  position: absolute; inset: 26% -2% 0 -2%; border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.35));
+  border: 1px solid rgba(255,255,255,.85);
+  -webkit-backdrop-filter: blur(12px) saturate(1.4); backdrop-filter: blur(12px) saturate(1.4);
+  transform-origin: bottom; transition: transform .5s cubic-bezier(.3,1.5,.5,1);
+}
+.gfolder-front::after { /* reflexo que passa pelo vidro */
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.7) 50%, transparent 65%);
+  background-size: 250% 100%; animation: sheen 5s ease-in-out infinite;
+}
+@keyframes sheen { 0%, 60% { background-position: 120% 0; } 100% { background-position: -120% 0; } }
+.gcard:active .gfolder-front { transform: perspective(300px) rotateX(-22deg); }
+.gcard:active .gfolder-paper { transform: rotate(-3deg) translateY(-14%); }
+
+/* desfoque progressivo: camadas com blur crescente, cada uma mascarada numa faixa */
+.pblur { position: absolute; left: 0; right: 0; bottom: 0; height: 46%; z-index: 1; pointer-events: none; }
+.pblur i { position: absolute; inset: 0; }
+.pblur i:nth-child(1) { -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px); -webkit-mask: linear-gradient(transparent 0%, #000 25%, #000 50%, transparent 75%); mask: linear-gradient(transparent 0%, #000 25%, #000 50%, transparent 75%); }
+.pblur i:nth-child(2) { -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); -webkit-mask: linear-gradient(transparent 25%, #000 50%, #000 75%, transparent 100%); mask: linear-gradient(transparent 25%, #000 50%, #000 75%, transparent 100%); }
+.pblur i:nth-child(3) { -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); -webkit-mask: linear-gradient(transparent 50%, #000 75%); mask: linear-gradient(transparent 50%, #000 75%); }
+.pblur i:nth-child(4) { background: linear-gradient(transparent 40%, rgba(246,243,236,.7)); }
+
+.gcard-foot { position: relative; z-index: 2; margin-top: 14px; }
+.gcard-foot h3 {
+  margin: 0 0 6px; font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: 30px; line-height: 1; text-transform: none; letter-spacing: -.01em;
+}
+.gcard-foot ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; color: var(--suave); }
+.gcard-foot li::before { content: "▸ "; color: var(--rosa-texto); }
+
+.deck-meta { display: flex; justify-content: space-between; align-items: center; padding: 0 var(--gutter); color: var(--suave); font-size: 11px; }
+.deck-dots { display: flex; gap: 5px; }
+.deck-dots i { width: 10px; height: 2px; border-radius: 2px; background: var(--linha); transition: width .3s, background .3s; }
+.deck-dots i.on { width: 22px; background: var(--tinta); }
+
+/* ---------- folha da pasta aberta (desdobra como papel) ---------- */
+.sheet { position: fixed; inset: 0; z-index: 90; perspective: 1100px; }
+.sheet-scrim {
+  position: absolute; inset: 0; background: rgba(43,42,38,.25);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+}
+.sheet-fold {
+  position: absolute; left: 10px; right: 10px; bottom: 10px; max-height: calc(100svh - 56px);
+  display: flex; flex-direction: column;
+  background: var(--papel); border-radius: 30px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,.9);
+  transform-style: preserve-3d;
+}
+.sheet-media {
+  position: relative; height: 38svh; min-height: 200px; overflow: hidden; isolation: isolate;
+  transform-origin: bottom center; backface-visibility: hidden;
+}
+.sheet-media .liquid { filter: blur(34px) saturate(1.2); }
+/* "vídeo desfocado" que se dissolve no papel — troca por poster/preview depois */
+.sheet-media::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(transparent 45%, var(--papel));
+}
+.sheet-grab { position: absolute; top: 8px; left: 50%; width: 38px; height: 4px; margin-left: -19px; border-radius: 4px; background: rgba(43,42,38,.25); z-index: 2; }
+.sheet-close {
+  position: absolute; top: 14px; right: 14px; z-index: 2;
+  width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
+  background: rgba(255,255,255,.45); border: 1px solid rgba(255,255,255,.85);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+}
+.sheet-body { padding: 0 20px 22px; margin-top: -46px; position: relative; overflow-y: auto; }
+.sheet-title {
+  margin: 0; font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: 44px; line-height: 1; text-transform: none; letter-spacing: -.02em;
+}
+.sheet-sub { margin: 8px 0 18px; color: var(--suave); font-size: 12px; }
+.sheet-reel { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 20px; scrollbar-width: none; margin: 0 -20px; padding: 0 20px; }
+.sheet-reel::-webkit-scrollbar { display: none; }
+.sheet-reel figure { margin: 0; flex: 0 0 42%; scroll-snap-align: start; }
+.sheet-reel::after { content: ""; flex: 0 0 8px; }
+.sheet-reel .vid {
+  aspect-ratio: 9 / 16; border-radius: 16px; position: relative; overflow: hidden;
+  background: linear-gradient(160deg, var(--rosa), var(--folha-clara));
+  display: grid; place-items: center;
+}
+.sheet-reel .vid span {
+  font-size: 10px; padding: 4px 9px; border-radius: 999px;
+  background: rgba(255,255,255,.5); border: 1px solid rgba(255,255,255,.85);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.sheet-reel figcaption { margin-top: 8px; font-size: 11px; color: var(--suave); }
+html.sheet-open, html.sheet-open body { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  .blob, .gfolder-front::after { animation: none; }
+  .gcard, .deck.in .gcard { transition: none; opacity: 1; translate: 0 0; rotate: x 0deg; }
+}

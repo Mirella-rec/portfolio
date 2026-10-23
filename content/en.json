@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Mirella Iezzi — videomaker" },
+  "meta": {
+    "title": "Mirella Iezzi — videomaker"
+  },
   "signature": "Mirella Iezzi",
   "soon": "coming soon",
   "nav": {
@@ -31,11 +33,46 @@
     "video": "9:16 video",
     "take": "take",
     "branches": [
-      { "id": "moda", "label": "fashion", "items": ["casa martin medeiros", "spencive", "salão casa moda"] },
-      { "id": "eventos", "label": "events", "items": ["melhor dia", "coverage", "story making"] },
-      { "id": "social", "label": "social / reels", "items": ["fashion", "beauty", "health"] },
-      { "id": "teatro", "label": "theater", "items": ["procópio ferreira", "retrospectives"] }
-    ]
+      {
+        "id": "moda",
+        "label": "fashion",
+        "items": [
+          "casa martin medeiros",
+          "spencive",
+          "salão casa moda"
+        ]
+      },
+      {
+        "id": "eventos",
+        "label": "events",
+        "items": [
+          "melhor dia",
+          "coverage",
+          "story making"
+        ]
+      },
+      {
+        "id": "social",
+        "label": "social / reels",
+        "items": [
+          "fashion",
+          "beauty",
+          "health"
+        ]
+      },
+      {
+        "id": "teatro",
+        "label": "theater",
+        "items": [
+          "procópio ferreira",
+          "retrospectives"
+        ]
+      }
+    ],
+    "deckHint": "swipe ↔ · tap to open",
+    "folders": "folders",
+    "open": "open",
+    "closeLabel": "close folder"
   },
   "servicos": {
     "title": "services",
