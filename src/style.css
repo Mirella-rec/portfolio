@@ -438,13 +438,14 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
    ========================================================= */
 .about-stage { position: relative; max-width: 640px; margin: 0 auto; }
 
-.about-lede {
-  position: relative; z-index: 1; margin: 0 0 56px;
-  font-family: var(--serif); font-size: clamp(27px, 7.4vw, 44px); line-height: 1.22;
-  letter-spacing: -.005em; text-transform: none; text-wrap: pretty;
+/* história em DM Mono (a outra fonte do site), no bloco onde a bolha vaga */
+.about-story { position: relative; margin: 0 0 56px; }
+.about-text { position: relative; z-index: 1; display: grid; gap: 1.1em; }
+.about-text p {
+  margin: 0; font-family: var(--mono); font-size: 15px; line-height: 1.75; letter-spacing: .02em;
 }
-.about-lede span { color: rgba(43, 42, 38, .16); transition: color .45s ease; }
-.about-lede span.on { color: var(--tinta); }
+.about-text span { color: rgba(43, 42, 38, .2); transition: color .5s ease; }
+.about-text span.on { color: var(--tinta); }
 
 .about-stats { position: relative; z-index: 1; list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .about-stats li {
@@ -460,14 +461,15 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
   letter-spacing: -.01em; font-variant-numeric: tabular-nums; text-transform: none;
 }
 .about-stats b.word { font-style: italic; font-size: 40px; letter-spacing: 1px; }
-.about-stats span { font-size: 12px; line-height: 1.5; color: var(--suave); max-width: 34ch; }
+.about-stats .lbl { font-size: 12px; line-height: 1.55; color: var(--suave); max-width: 38ch; }
+.about-stats .note { margin-top: 6px; font-size: 11px; line-height: 1.55; color: var(--suave); opacity: .8; max-width: 38ch; }
 
 .about-skills { position: relative; z-index: 1; margin: 28px 0 0; text-align: center; color: var(--rosa-texto); }
 
 /* forma de vidro: transparente o bastante para o texto continuar legível */
 .about-blob {
   position: absolute; left: 0; top: 0; z-index: 2; pointer-events: none;
-  width: clamp(150px, 46vw, 260px); aspect-ratio: 1;
+  width: clamp(130px, 40vw, 240px); aspect-ratio: 1;
   will-change: transform;
 }
 .about-blob-body {
@@ -505,6 +507,6 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   .about-blob-body { animation: none; }
-  .about-lede span { color: var(--tinta); transition: none; }
+  .about-text span { color: var(--tinta); transition: none; }
   .about-stats li { opacity: 1; transform: none; transition: none; }
 }

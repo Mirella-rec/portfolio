@@ -19,7 +19,11 @@
   },
   "sobre": {
     "title": "about me",
-    "lede": "I'm Mirella Iezzi, a videomaker in Guarujá, Brazil. I script, shoot and edit vertical video for fashion, beauty and event brands, from brief to post.",
+    "story": [
+      "at 16 I started Spencive, my own fashion brand. I ran everything, from marketing to operations, and that is where I learned to edit: every video had to introduce the brand and sell.",
+      "in 3 months, Spencive reached a 70% return on investment. owning a business that early taught me to meet deadlines, to answer for results and to treat every project as if it were mine.",
+      "today I'm a videomaker in Guarujá, Brazil. I script, shoot and edit vertical video for fashion brands, events and festivals, from brief to post."
+    ],
     "stats": [
       {
         "n": 1200,
@@ -29,7 +33,7 @@
       {
         "n": 70,
         "suf": "%",
-        "label": "return on investment in 3 months with Spencive, my own fashion brand"
+        "label": "return on investment in 3 months with Spencive, the brand I started at 16"
       },
       {
         "big": "festivals",
@@ -37,7 +41,8 @@
       },
       {
         "big": "ESPM",
-        "label": "digital marketing with a growth focus"
+        "label": "advanced digital marketing: growth, paid media and A/B testing, data intelligence with journeys and KPIs, branding and community.",
+        "note": "I also hold a technical degree in IT from Microcamp and advanced English from CNA."
       }
     ],
     "skills": "filming · scripting · editing · social media"
@@ -75,22 +80,22 @@
       },
       {
         "id": "social",
-        "label": "social / reels",
+        "label": "editing",
         "items": [
           "fashion",
           "beauty",
           "health"
         ],
-        "desc": "Reels and vertical content for fashion, beauty and health, from script to edit."
+        "desc": "Reels and vertical video editing for fashion, beauty and health, paced to keep people watching."
       },
       {
         "id": "teatro",
-        "label": "theater",
+        "label": "shows",
         "items": [
           "procópio ferreira",
           "retrospectives"
         ],
-        "desc": "Stage performance recordings and video retrospectives for celebrations."
+        "desc": "Recordings of stage performances and live shows, from the stage to backstage."
       }
     ],
     "open": "open",

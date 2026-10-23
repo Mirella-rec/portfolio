@@ -96,19 +96,25 @@ Não é caótico: é colagem com curadoria.
 1. **Abertura:** colagem animada.
 2. **Sobre ("QUEM SOU EU"):** trajetória e números. Feito primeiro no celular (decisão de 22/10: finalizar o mobile antes do desktop).
    - Título no mesmo estilo de PROJETOS (Playfair reta, caixa alta, centralizado, sem número).
-   - Texto enxuto que "acende" palavra por palavra conforme o scroll; números que contam ao aparecer (`src/about.js`).
-   - Uma forma orgânica de vidro rosa-bebê flutua sobre o texto (muda de forma devagar, desce com o scroll e segue o dedo).
-     Ela precisa ser transparente o bastante para o texto embaixo continuar legível: rosa só na borda e nos reflexos.
-   - Confirmar com a Mirella: idade em que criou a Spencive (15 ou 16 anos) e se pode citar Chilli Beans, Smoke e Amir Slama.
-   - Marca própria Spencive, criada aos 15 anos, com 70% de ROI em 3 meses.
+   - História curta em **DM Mono** (3 parágrafos), com gancho no lado empreendedor: criou a Spencive aos **16 anos** (confirmado em 22/10),
+     cuidava do marketing à operação e aprendeu a editar ali; 70% de retorno em 3 meses; responsabilidade com prazo e resultado.
+     As palavras "acendem" conforme o scroll; números que contam ao aparecer (`src/about.js`).
+   - Uma forma orgânica de vidro rosa-bebê **vaga livremente só dentro do bloco da história** (não segue o dedo nem o scroll).
+     Precisa ser transparente o bastante para o texto embaixo continuar legível: rosa só na borda e nos reflexos.
+   - Destaques: +1.200 vídeos, 70%, festivais e **ESPM** (Marketing Digital Avançado: growth, mídia paga e testes A/B,
+     inteligência de dados com jornadas e KPIs, branding e comunidade). Embaixo da ESPM, sem ênfase:
+     técnico de informática pela Microcamp e inglês avançado pelo CNA.
+   - Ainda confirmar com a Mirella se pode citar Chilli Beans, Smoke e Amir Slama.
+   - Marca própria Spencive, criada aos 16 anos, com 70% de ROI em 3 meses.
    - Mais de 1.200 vídeos roteirizados, captados e editados em 9 meses na Casa Martin Medeiros.
    - Festivais Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama).
    - Estudante de marketing digital na ESPM.
-3. **Projetos:** árvore de pastas com 4 galhos.
+3. **Projetos:** 4 pastas, nesta ordem e com estes nomes (decisão de 22/10): **moda, eventos, edição, shows**.
    - Moda: Casa Martin Medeiros, Spencive, Salão Casa Moda.
-   - Eventos e festivais: Melhor Dia, coberturas, story making.
-   - Social media / Reels: moda, beleza, saúde.
-   - Teatro e celebrações: Teatro Procópio Ferreira, retrospectivas.
+   - Eventos: Melhor Dia, coberturas, story making.
+   - Edição: Reels e vídeos verticais (moda, beleza, saúde).
+   - Shows: Teatro Procópio Ferreira, retrospectivas.
+   - Os projetos dentro de cada pasta ainda são provisórios: pedir à Mirella a lista real.
    - Ao abrir uma pasta: **só vídeos + legenda curta**, sem case longo.
 4. **Serviços:** captação, roteiro, edição, social media, cobertura de eventos.
 5. **Contato:** CTA de WhatsApp em destaque, Instagram e e-mail como secundários.

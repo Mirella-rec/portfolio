@@ -19,7 +19,11 @@
   },
   "sobre": {
     "title": "quem sou eu",
-    "lede": "Sou Mirella Iezzi, videomaker em Guarujá. Roteirizo, capto e edito vídeos verticais para marcas de moda, beleza e eventos, do briefing ao post.",
+    "story": [
+      "aos 16 anos criei a Spencive, minha marca de moda. cuidava de tudo, do marketing à operação, e foi ali que aprendi a editar: cada vídeo precisava apresentar a marca e vender.",
+      "em 3 meses, a Spencive teve 70% de retorno sobre o investimento. ser dona de um negócio tão cedo me ensinou a cumprir prazo, a responder pelo resultado e a tratar cada projeto como se fosse meu.",
+      "hoje sou videomaker em Guarujá. roteirizo, capto e edito vídeos verticais para marcas de moda, eventos e festivais, do briefing ao post."
+    ],
     "stats": [
       {
         "n": 1200,
@@ -29,7 +33,7 @@
       {
         "n": 70,
         "suf": "%",
-        "label": "de retorno sobre o investimento em 3 meses com a Spencive, minha marca de moda"
+        "label": "de retorno sobre o investimento em 3 meses com a Spencive, marca que criei aos 16 anos"
       },
       {
         "big": "festivais",
@@ -37,7 +41,8 @@
       },
       {
         "big": "ESPM",
-        "label": "marketing digital com foco em growth"
+        "label": "marketing digital avançado: growth, mídia paga e testes A/B, inteligência de dados com jornadas e KPIs, branding e comunidade.",
+        "note": "também sou formada em técnico de informática pela Microcamp e em inglês avançado pelo CNA."
       }
     ],
     "skills": "captação · roteiro · edição · social media"
@@ -75,22 +80,22 @@
       },
       {
         "id": "social",
-        "label": "social / reels",
+        "label": "edição",
         "items": [
           "moda",
           "beleza",
           "saúde"
         ],
-        "desc": "Reels e conteúdos verticais para moda, beleza e saúde, do roteiro à edição."
+        "desc": "Edição de Reels e vídeos verticais para moda, beleza e saúde, com ritmo pensado para prender quem assiste."
       },
       {
         "id": "teatro",
-        "label": "teatro",
+        "label": "shows",
         "items": [
           "procópio ferreira",
           "retrospectivas"
         ],
-        "desc": "Registros de espetáculos e retrospectivas em vídeo para celebrações."
+        "desc": "Registros de espetáculos e apresentações ao vivo, do palco aos bastidores."
       }
     ],
     "open": "abrir",
