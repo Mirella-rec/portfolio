@@ -23,7 +23,6 @@
   },
   "projetos": {
     "title": "projetos",
-    "kicker": "cada galho é uma área · cada pasta abre um projeto",
     "path": "projetos",
     "sidebar": "galhos",
     "replay": "↻ crescer de novo",
@@ -73,7 +72,6 @@
         "desc": "Registros de espetáculos e retrospectivas em vídeo para celebrações."
       }
     ],
-    "deckHint": "role para ver · toque para abrir",
     "open": "abrir",
     "closeLabel": "fechar pasta"
   },

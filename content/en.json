@@ -23,7 +23,6 @@
   },
   "projetos": {
     "title": "projects",
-    "kicker": "each branch is a field · each folder opens a project",
     "path": "projects",
     "sidebar": "branches",
     "replay": "↻ grow again",
@@ -73,7 +72,6 @@
         "desc": "Stage performance recordings and video retrospectives for celebrations."
       }
     ],
-    "deckHint": "scroll to see · tap to open",
     "open": "open",
     "closeLabel": "close folder"
   },

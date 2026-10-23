@@ -281,7 +281,6 @@ button { font: inherit; letter-spacing: inherit; text-transform: inherit; color:
   .sheet:not([hidden]) { display: block; }
 }
 
-.deck-hint { margin: -12px 0 24px; color: var(--suave); font-size: 11px; }
 /* pastas em coluna, uma embaixo da outra, sem sobrepor */
 .deck-track { display: flex; flex-direction: column; gap: 22px; }
 
