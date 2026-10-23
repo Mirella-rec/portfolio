@@ -45,7 +45,7 @@ Não é caótico: é colagem com curadoria.
      de vidro rosa-bebê (aba translúcida, frente fosca com reflexo, brilho rosa suave embaixo).
      Sem numeração, sem botão "abrir" e sem lista de projetos no card.
      Ao tocar, a pasta abre numa folha que desdobra como papel (arrastar para baixo fecha).
-     Título da seção: "PROJETOS" em caixa alta, centralizado, sem texto de apoio abaixo, com respiro maior até a primeira pasta.
+     Título da seção: "PROJETOS" em Playfair Display itálico, caixa alta, centralizado, sem número e sem texto de apoio abaixo, com respiro maior até a primeira pasta.
      Na folha aberta: título, descrição curta dos vídeos daquele galho (`desc` em content/*.json) e os vídeos com legenda.
      Referências: cards com gradiente e liquid glass, dobradura de papel (promo iPhone/Plasma), progressive blur + frosted glass.
 4. **Cursor customizado.** Muda sobre os vídeos (ex.: vira "PLAY").
