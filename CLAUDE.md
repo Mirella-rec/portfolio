@@ -147,6 +147,7 @@ Quando ela escrever **SALVAR ALTERAÇÃO**, execute nesta ordem:
 4. Adicione uma linha em `CHANGELOG.md` com a data, o que mudou e o porquê.
 5. Abra a prévia e confirme que ela carrega sem erros.
    Depois publique a pasta `preview/` como link de prévia (Artifact, sempre no mesmo link) para a Mirella abrir no celular.
+   Link da prévia: https://claude.ai/artifact/YZGuwbKmEDA5gy1sTi7y78 (atualize este, passando-o como `url`; não crie outro).
    O build usa caminhos relativos (`base: "./"` no vite.config.js) para isso funcionar.
 6. Responda à Mirella com:
    - 1 ou 2 frases sobre o que mudou;
