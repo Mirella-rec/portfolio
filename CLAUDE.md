@@ -70,7 +70,9 @@ Não é caótico: é colagem com curadoria.
 - **Assinatura:** *Mirella Iezzi*, sempre em Playfair Display itálico.
 - **Fontes (Google Fonts):**
   - **Playfair Display**: nome, títulos e textos de apresentação. Itálico para a assinatura e destaques.
-  - **DM Mono**: menu, legendas dos vídeos, botões, etiquetas, timecode. Sempre em minúsculas, tracking leve (~0.04em).
+  - **DM Mono**: menu, legendas dos vídeos, botões, etiquetas, timecode. Tracking leve (~0.04em).
+    **Todos os textos começam com letra maiúscula** e nomes próprios ficam com maiúscula (decisão de 22/10; antes era tudo em minúsculas).
+    Os títulos de seção QUEM SOU EU e PROJETOS continuam em caixa alta.
   - Não usar Playfair em textos menores que 15px.
 - **Paleta:**
 

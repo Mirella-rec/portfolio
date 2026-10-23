@@ -3,22 +3,22 @@
     "title": "Mirella Iezzi — videomaker"
   },
   "signature": "Mirella Iezzi",
-  "soon": "coming soon",
+  "soon": "Coming soon",
   "nav": {
-    "sobre": "about",
-    "projetos": "projects",
-    "servicos": "services",
-    "contato": "contact",
-    "lang": "pt",
-    "langLabel": "mudar para português"
+    "sobre": "About",
+    "projetos": "Projects",
+    "servicos": "Services",
+    "contato": "Contact",
+    "lang": "PT",
+    "langLabel": "Mudar para português"
   },
   "hero": {
-    "kicker": "rec · videomaker and editor · working across brazil",
+    "kicker": "REC · videomaker and editor · working across Brazil",
     "lede": "Filming, scripting and editing vertical video for fashion, beauty, events and social media.",
-    "placeholder": "animated opening collage"
+    "placeholder": "Animated opening collage"
   },
   "sobre": {
-    "title": "about me",
+    "title": "About me",
     "story": [
       "Video has always been my way of telling stories. I started editing at 16, when I created Spencive, my clothing brand. I needed videos to show the pieces, and I learned by doing, from script to final cut.",
       "The brand became my school. I took from it the care of someone who manages and creates content, and the drive to deliver work I'm proud of. That is also where my work as a social media manager began: I plan, create and manage content for fashion, beauty and health brands.",
@@ -28,102 +28,102 @@
       {
         "n": 1200,
         "pre": "+",
-        "label": "videos scripted, shot and edited in 9 months"
+        "label": "Videos scripted, shot and edited in 9 months"
       },
       {
         "big": "Brazil",
-        "label": "remote editing for clients across the country"
+        "label": "Remote editing for clients across the country"
       },
       {
-        "big": "festivals",
+        "big": "Festivals",
         "label": "Melhor Dia (Chilli Beans, Smoke) and Salão Casa Moda (Amir Slama)"
       },
       {
         "big": "ESPM",
-        "label": "advanced digital marketing: growth, paid media and A/B testing, data intelligence with journeys and KPIs, branding and community.",
+        "label": "Advanced digital marketing: growth, paid media and A/B testing, data intelligence with journeys and KPIs, branding and community.",
         "note": "I also hold a technical degree in IT from Microcamp and advanced English from CNA."
       }
     ],
-    "skills": "filming · scripting · editing · social media"
+    "skills": "Filming · scripting · editing · social media"
   },
   "projetos": {
-    "title": "projects",
-    "path": "projects",
-    "sidebar": "branches",
-    "replay": "↻ grow again",
+    "title": "Projects",
+    "path": "Projects",
+    "sidebar": "Branches",
+    "replay": "↻ Grow again",
     "count": "{branches} branches · {folders} folders",
-    "statusNote": "videos coming soon",
-    "close": "close ✕",
-    "video": "9:16 video",
-    "take": "take",
+    "statusNote": "Videos coming soon",
+    "close": "Close ✕",
+    "video": "9:16 Video",
+    "take": "Take",
     "branches": [
       {
         "id": "moda",
-        "label": "fashion",
+        "label": "Fashion",
         "items": [
-          "casa martin medeiros",
-          "spencive",
-          "salão casa moda"
+          "Casa Martin Medeiros",
+          "Spencive",
+          "Salão Casa Moda"
         ],
         "desc": "Videos for independent fashion brands: lookbooks, atelier behind-the-scenes and collection launches."
       },
       {
         "id": "eventos",
-        "label": "events",
+        "label": "Events",
         "items": [
-          "melhor dia",
-          "coverage",
-          "story making"
+          "Melhor Dia",
+          "Coverage",
+          "Story making"
         ],
         "desc": "Festival and event coverage, with live story making and aftermovies."
       },
       {
         "id": "social",
-        "label": "editing",
+        "label": "Editing",
         "items": [
-          "fashion",
-          "beauty",
-          "health"
+          "Fashion",
+          "Beauty",
+          "Health"
         ],
         "desc": "Reels and vertical video editing for fashion, beauty and health, paced to keep people watching."
       },
       {
         "id": "teatro",
-        "label": "shows",
+        "label": "Shows",
         "items": [
-          "procópio ferreira"
+          "Procópio Ferreira"
         ],
         "desc": "Recordings of stage performances and live shows, from the stage to backstage."
       },
       {
         "id": "retrospectivas",
-        "label": "retrospectives",
+        "label": "Retrospectives",
         "items": [
-          "15th birthday"
+          "15Th birthday"
         ],
         "desc": "Video retrospectives for birthdays and celebrations, told through the photos and videos of the people who lived them."
       }
     ],
-    "open": "open",
-    "closeLabel": "close folder"
+    "open": "Open",
+    "closeLabel": "Close folder"
   },
   "servicos": {
-    "title": "services",
-    "placeholder": "filming, scripting, editing, social media and event coverage"
+    "title": "Services",
+    "placeholder": "Filming, scripting, editing, social media and event coverage"
   },
   "contato": {
-    "title": "contact",
-    "kicker": "shall we shoot something together?",
-    "whatsapp": "message on whatsapp",
-    "instagram": "instagram",
-    "email": "email"
+    "title": "Contact",
+    "kicker": "Shall we shoot something together?",
+    "whatsapp": "Message on WhatsApp",
+    "instagram": "Instagram",
+    "email": "Email"
   },
   "footer": {
-    "socialLabel": "[social]",
-    "social": "instagram · tiktok",
-    "reachLabel": "[reach]",
-    "reach": "whatsapp · email",
-    "locationLabel": "[location]",
-    "location": "guarujá, brazil · working nationwide"
+    "socialLabel": "[Social]",
+    "social": "Instagram · TikTok",
+    "reachLabel": "[Reach]",
+    "reach": "WhatsApp · email",
+    "locationLabel": "[Location]",
+    "location": "Guarujá, Brazil · working nationwide"
   }
 }
