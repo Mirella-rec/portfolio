@@ -13,16 +13,16 @@
     "langLabel": "switch to english"
   },
   "hero": {
-    "kicker": "rec · videomaker em guarujá, sp",
+    "kicker": "rec · videomaker e editora · atendo todo o brasil",
     "lede": "Captação, roteiro e edição de vídeos verticais para moda, beleza, eventos e social media.",
     "placeholder": "colagem animada da abertura"
   },
   "sobre": {
     "title": "quem sou eu",
     "story": [
-      "aos 16 anos criei a Spencive, minha marca de moda. cuidava de tudo, do marketing à operação, e foi ali que aprendi a editar: cada vídeo precisava apresentar a marca e vender.",
-      "em 3 meses, a Spencive teve 70% de retorno sobre o investimento. ser dona de um negócio tão cedo me ensinou a cumprir prazo, a responder pelo resultado e a tratar cada projeto como se fosse meu.",
-      "hoje sou videomaker em Guarujá. roteirizo, capto e edito vídeos verticais para marcas de moda, eventos e festivais, do briefing ao post."
+      "o audiovisual sempre foi o meu jeito de contar histórias. comecei a editar aos 16 anos, quando criei a Spencive, minha marca de moda: eu precisava de vídeos para apresentar as peças e aprendi fazendo, do roteiro ao corte final.",
+      "a marca virou escola e o vídeo virou profissão. levei dali o cuidado de quem é dona do próprio negócio: cumprir prazo, entender o cliente e entregar um trabalho do qual me orgulho.",
+      "hoje sou videomaker e editora. capto e edito vídeos verticais para marcas de moda, eventos e festivais, e atendo clientes de todo o Brasil como editora remota."
     ],
     "stats": [
       {
@@ -31,9 +31,8 @@
         "label": "vídeos roteirizados, captados e editados em 9 meses"
       },
       {
-        "n": 70,
-        "suf": "%",
-        "label": "de retorno sobre o investimento em 3 meses com a Spencive, marca que criei aos 16 anos"
+        "big": "Brasil",
+        "label": "edição remota para clientes de todo o país"
       },
       {
         "big": "festivais",
@@ -125,6 +124,6 @@
     "reachLabel": "[contato]",
     "reach": "whatsapp · e-mail",
     "locationLabel": "[local]",
-    "location": "guarujá, sp — brasil"
+    "location": "guarujá, sp · atendimento em todo o brasil"
   }
 }

@@ -13,16 +13,16 @@
     "langLabel": "mudar para português"
   },
   "hero": {
-    "kicker": "rec · videomaker in guarujá, brazil",
+    "kicker": "rec · videomaker and editor · working across brazil",
     "lede": "Filming, scripting and editing vertical video for fashion, beauty, events and social media.",
     "placeholder": "animated opening collage"
   },
   "sobre": {
     "title": "about me",
     "story": [
-      "at 16 I started Spencive, my own fashion brand. I ran everything, from marketing to operations, and that is where I learned to edit: every video had to introduce the brand and sell.",
-      "in 3 months, Spencive reached a 70% return on investment. owning a business that early taught me to meet deadlines, to answer for results and to treat every project as if it were mine.",
-      "today I'm a videomaker in Guarujá, Brazil. I script, shoot and edit vertical video for fashion brands, events and festivals, from brief to post."
+      "video has always been my way of telling stories. I started editing at 16, when I created Spencive, my own fashion brand: I needed videos to show the pieces, and I learned by doing, from script to final cut.",
+      "the brand became my school and video became my profession. I kept the care of someone who owns her business: meeting deadlines, understanding the client and delivering work I'm proud of.",
+      "today I'm a videomaker and editor. I shoot and edit vertical video for fashion brands, events and festivals, and I work with clients all over Brazil as a remote editor."
     ],
     "stats": [
       {
@@ -31,9 +31,8 @@
         "label": "videos scripted, shot and edited in 9 months"
       },
       {
-        "n": 70,
-        "suf": "%",
-        "label": "return on investment in 3 months with Spencive, the brand I started at 16"
+        "big": "Brazil",
+        "label": "remote editing for clients across the country"
       },
       {
         "big": "festivals",
@@ -125,6 +124,6 @@
     "reachLabel": "[reach]",
     "reach": "whatsapp · email",
     "locationLabel": "[location]",
-    "location": "guarujá, sp — brazil"
+    "location": "guarujá, brazil · working nationwide"
   }
 }

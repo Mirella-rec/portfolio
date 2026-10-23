@@ -57,6 +57,8 @@ Não é caótico: é colagem com curadoria.
 - **Árvore orgânica ilustrada** como elo visual: a árvore do rodapé/paisagem conversa com a árvore de pastas da aba Projetos.
   As duas devem parecer da mesma família.
 
+**Menu (22/10):** fixo no topo, mas some ao rolar para baixo e volta ao rolar para cima, com fundo de vidro fosco, para não poluir a jornada no celular.
+
 **Referências de usabilidade:**
 - heatbureau.com/projects: nav mínima em minúsculas, pouco texto, rodapé em blocos rotulados ([social], [reach], [location]).
 - barbianaliu.com: layout editorial/colagem.
@@ -96,16 +98,17 @@ Não é caótico: é colagem com curadoria.
 1. **Abertura:** colagem animada.
 2. **Sobre ("QUEM SOU EU"):** trajetória e números. Feito primeiro no celular (decisão de 22/10: finalizar o mobile antes do desktop).
    - Título no mesmo estilo de PROJETOS (Playfair reta, caixa alta, centralizado, sem número).
-   - História curta em **DM Mono** (3 parágrafos), com gancho no lado empreendedor: criou a Spencive aos **16 anos** (confirmado em 22/10),
-     cuidava do marketing à operação e aprendeu a editar ali; 70% de retorno em 3 meses; responsabilidade com prazo e resultado.
+   - História curta em **DM Mono** (3 parágrafos) sobre a **paixão pelo audiovisual** (atualizado em 22/10).
+     A Spencive (criada aos **16 anos**) é só o gancho de onde veio a habilidade de editar; não falar do ROI da Spencive.
+     Fecha dizendo que ela atende **clientes de todo o Brasil como editora remota** (nunca dizer que trabalha só em Guarujá).
      As palavras "acendem" conforme o scroll; números que contam ao aparecer (`src/about.js`).
    - Uma forma orgânica de vidro rosa-bebê **vaga livremente só dentro do bloco da história** (não segue o dedo nem o scroll).
      Precisa ser transparente o bastante para o texto embaixo continuar legível: rosa só na borda e nos reflexos.
-   - Destaques: +1.200 vídeos, 70%, festivais e **ESPM** (Marketing Digital Avançado: growth, mídia paga e testes A/B,
+   - Destaques: +1.200 vídeos, Brasil (edição remota), festivais e **ESPM** (Marketing Digital Avançado: growth, mídia paga e testes A/B,
      inteligência de dados com jornadas e KPIs, branding e comunidade). Embaixo da ESPM, sem ênfase:
      técnico de informática pela Microcamp e inglês avançado pelo CNA.
    - Nomes de marcas liberados pela Mirella (22/10): Chilli Beans, Smoke, Amir Slama, Casa Martin Medeiros. Só os nomes; logos não sem autorização.
-   - Marca própria Spencive, criada aos 16 anos, com 70% de ROI em 3 meses.
+   - Marca própria Spencive, criada aos 16 anos (onde começou a editar).
    - Mais de 1.200 vídeos roteirizados, captados e editados em 9 meses na Casa Martin Medeiros.
    - Festivais Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama).
    - Estudante de marketing digital na ESPM.

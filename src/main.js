@@ -66,3 +66,14 @@ async function setLang(next) {
 document.getElementById("lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
 setLang(lang);
+
+// Menu: some ao rolar para baixo, volta ao rolar para cima (e sempre aparece no topo da página)
+const nav = document.querySelector(".nav");
+let lastY = scrollY;
+addEventListener("scroll", () => {
+  const y = scrollY;
+  if (Math.abs(y - lastY) < 6) return;
+  nav.classList.toggle("hide", y > lastY && y > 120);
+  lastY = y;
+}, { passive: true });
+nav.addEventListener("focusin", () => nav.classList.remove("hide"));

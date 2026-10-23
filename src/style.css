@@ -58,8 +58,12 @@ button { font: inherit; letter-spacing: inherit; text-transform: inherit; color:
   position: sticky; top: 0; z-index: 50;
   display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
   padding: 18px var(--gutter);
-  background: linear-gradient(var(--papel) 60%, rgba(246, 243, 236, 0));
+  background: rgba(246, 243, 236, .78);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2); backdrop-filter: blur(12px) saturate(1.2);
+  transition: transform .45s cubic-bezier(.2,.8,.2,1);
 }
+/* o menu some ao rolar para baixo e volta ao rolar para cima, para não poluir a navegação */
+.nav.hide { transform: translateY(-105%); }
 .nav-sig {
   font-family: var(--serif); font-style: italic; font-size: 20px;
   text-transform: none; letter-spacing: 0; text-decoration: none;
