@@ -1,5 +1,6 @@
 import { createTree } from "./tree.js";
 import { createDeck } from "./deck.js";
+import { createAbout } from "./about.js";
 
 // Textos ficam em content/*.json (CLAUDE.md, seção 6)
 const CONTENT_URLS = {
@@ -45,6 +46,8 @@ const tree = createTree({
   panel: document.getElementById("folder-panel"),
 });
 
+const about = createAbout(document.getElementById("about"));
+
 const deck = createDeck({
   root: document.getElementById("deck"),
   sheet: document.getElementById("sheet"),
@@ -56,9 +59,21 @@ async function setLang(next) {
   applyText(t, lang);
   tree.setContent(t.projetos);
   deck.setContent(t.projetos);
+  about.setContent(t.sobre, lang);
   saveLang(lang);
 }
 
 document.getElementById("lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
 setLang(lang);
+
+// Menu: some ao rolar para baixo, volta ao rolar para cima (e sempre aparece no topo da página)
+const nav = document.querySelector(".nav");
+let lastY = scrollY;
+addEventListener("scroll", () => {
+  const y = scrollY;
+  if (Math.abs(y - lastY) < 6) return;
+  nav.classList.toggle("hide", y > lastY && y > 120);
+  lastY = y;
+}, { passive: true });
+nav.addEventListener("focusin", () => nav.classList.remove("hide"));

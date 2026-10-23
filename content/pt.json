@@ -13,13 +13,38 @@
     "langLabel": "switch to english"
   },
   "hero": {
-    "kicker": "rec · videomaker em guarujá, sp",
+    "kicker": "rec · videomaker e editora · atendo todo o brasil",
     "lede": "Captação, roteiro e edição de vídeos verticais para moda, beleza, eventos e social media.",
     "placeholder": "colagem animada da abertura"
   },
   "sobre": {
-    "title": "sobre",
-    "placeholder": "trajetória e números"
+    "title": "quem sou eu",
+    "story": [
+      "O audiovisual sempre foi o meu jeito de contar histórias. Comecei a editar aos 16 anos, quando criei a Spencive, minha marca de roupas. Precisava de vídeos para apresentar as peças e aprendi fazendo, do roteiro ao corte final.",
+      "A marca virou minha escola. Levei dali o cuidado de quem é gestor e de conteúdo. Além de entregar um trabalho do qual me orgulho.",
+      "Hoje sou videomaker e editora. Capto e edito vídeos verticais para marcas de moda, eventos e festivais e atendo clientes de todo o Brasil como editora remota."
+    ],
+    "stats": [
+      {
+        "n": 1200,
+        "pre": "+",
+        "label": "vídeos roteirizados, captados e editados em 9 meses"
+      },
+      {
+        "big": "Brasil",
+        "label": "edição remota para clientes de todo o país"
+      },
+      {
+        "big": "festivais",
+        "label": "Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama)"
+      },
+      {
+        "big": "ESPM",
+        "label": "marketing digital avançado: growth, mídia paga e testes A/B, inteligência de dados com jornadas e KPIs, branding e comunidade.",
+        "note": "também sou formada em técnico de informática pela Microcamp e em inglês avançado pelo CNA."
+      }
+    ],
+    "skills": "captação · roteiro · edição · social media"
   },
   "projetos": {
     "title": "projetos",
@@ -54,22 +79,29 @@
       },
       {
         "id": "social",
-        "label": "social / reels",
+        "label": "edição",
         "items": [
           "moda",
           "beleza",
           "saúde"
         ],
-        "desc": "Reels e conteúdos verticais para moda, beleza e saúde, do roteiro à edição."
+        "desc": "Edição de Reels e vídeos verticais para moda, beleza e saúde, com ritmo pensado para prender quem assiste."
       },
       {
         "id": "teatro",
-        "label": "teatro",
+        "label": "shows",
         "items": [
-          "procópio ferreira",
-          "retrospectivas"
+          "procópio ferreira"
         ],
-        "desc": "Registros de espetáculos e retrospectivas em vídeo para celebrações."
+        "desc": "Registros de espetáculos e apresentações ao vivo, do palco aos bastidores."
+      },
+      {
+        "id": "retrospectivas",
+        "label": "retrospectivas",
+        "items": [
+          "aniversário de 15 anos"
+        ],
+        "desc": "Retrospectivas em vídeo para aniversários e celebrações, contadas com fotos e vídeos de quem viveu a história."
       }
     ],
     "open": "abrir",
@@ -92,6 +124,6 @@
     "reachLabel": "[contato]",
     "reach": "whatsapp · e-mail",
     "locationLabel": "[local]",
-    "location": "guarujá, sp — brasil"
+    "location": "guarujá, sp · atendimento em todo o brasil"
   }
 }

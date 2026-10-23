@@ -57,6 +57,8 @@ Não é caótico: é colagem com curadoria.
 - **Árvore orgânica ilustrada** como elo visual: a árvore do rodapé/paisagem conversa com a árvore de pastas da aba Projetos.
   As duas devem parecer da mesma família.
 
+**Menu (22/10):** fixo no topo, mas some ao rolar para baixo e volta ao rolar para cima, com fundo de vidro fosco, para não poluir a jornada no celular.
+
 **Referências de usabilidade:**
 - heatbureau.com/projects: nav mínima em minúsculas, pouco texto, rodapé em blocos rotulados ([social], [reach], [location]).
 - barbianaliu.com: layout editorial/colagem.
@@ -94,16 +96,29 @@ Não é caótico: é colagem com curadoria.
 ## 4. Estrutura do site
 
 1. **Abertura:** colagem animada.
-2. **Sobre:** trajetória e números.
-   - Marca própria Spencive, criada aos 15 anos, com 70% de ROI em 3 meses.
+2. **Sobre ("QUEM SOU EU"):** trajetória e números. Feito primeiro no celular (decisão de 22/10: finalizar o mobile antes do desktop).
+   - Título no mesmo estilo de PROJETOS (Playfair reta, caixa alta, centralizado, sem número).
+   - História curta em **DM Mono** (3 parágrafos) sobre a **paixão pelo audiovisual** (atualizado em 22/10).
+     A Spencive (criada aos **16 anos**) é só o gancho de onde veio a habilidade de editar; não falar do ROI da Spencive.
+     Fecha dizendo que ela atende **clientes de todo o Brasil como editora remota** (nunca dizer que trabalha só em Guarujá).
+     As palavras "acendem" conforme o scroll; números que contam ao aparecer (`src/about.js`).
+   - Uma forma orgânica de vidro rosa-bebê **vaga livremente só dentro do bloco da história** (não segue o dedo nem o scroll).
+     Precisa ser transparente o bastante para o texto embaixo continuar legível: rosa só na borda e nos reflexos.
+   - Destaques: +1.200 vídeos, Brasil (edição remota), festivais e **ESPM** (Marketing Digital Avançado: growth, mídia paga e testes A/B,
+     inteligência de dados com jornadas e KPIs, branding e comunidade). Embaixo da ESPM, sem ênfase:
+     técnico de informática pela Microcamp e inglês avançado pelo CNA.
+   - Nomes de marcas liberados pela Mirella (22/10): Chilli Beans, Smoke, Amir Slama, Casa Martin Medeiros. Só os nomes; logos não sem autorização.
+   - Marca própria Spencive, criada aos 16 anos (onde começou a editar).
    - Mais de 1.200 vídeos roteirizados, captados e editados em 9 meses na Casa Martin Medeiros.
    - Festivais Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama).
    - Estudante de marketing digital na ESPM.
-3. **Projetos:** árvore de pastas com 4 galhos.
+3. **Projetos:** 5 pastas, nesta ordem e com estes nomes (decisão de 22/10): **moda, eventos, edição, shows, retrospectivas**.
    - Moda: Casa Martin Medeiros, Spencive, Salão Casa Moda.
-   - Eventos e festivais: Melhor Dia, coberturas, story making.
-   - Social media / Reels: moda, beleza, saúde.
-   - Teatro e celebrações: Teatro Procópio Ferreira, retrospectivas.
+   - Eventos: Melhor Dia, coberturas, story making.
+   - Edição: Reels e vídeos verticais (moda, beleza, saúde).
+   - Shows: Teatro Procópio Ferreira.
+   - Retrospectivas: aniversário de 15 anos.
+   - Os projetos dentro de cada pasta ainda são provisórios: pedir à Mirella a lista real.
    - Ao abrir uma pasta: **só vídeos + legenda curta**, sem case longo.
 4. **Serviços:** captação, roteiro, edição, social media, cobertura de eventos.
 5. **Contato:** CTA de WhatsApp em destaque, Instagram e e-mail como secundários.
@@ -162,7 +177,7 @@ Se ela pedir para "voltar para a versão de ontem", recupere pelo histórico.
 - [ ] Desenhar logo/monograma (opcional) e o estilo das ilustrações (árvore e personagens).
 - [ ] Separar e nomear os vídeos por galho/projeto.
 - [ ] Gerar previews e capas dos vídeos.
-- [ ] Confirmar quais clientes podem ser citados por nome.
+- [x] Confirmar quais clientes podem ser citados por nome (liberados em 22/10: Chilli Beans, Smoke, Amir Slama, Casa Martin Medeiros).
 - [ ] Escrever os textos (PT e EN).
 - [ ] Definir o número de WhatsApp e a mensagem pronta.
 - [ ] Escolher hospedagem e domínio (mais para frente).
