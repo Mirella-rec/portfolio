@@ -327,7 +327,7 @@ button { font: inherit; letter-spacing: inherit; text-transform: inherit; color:
 .gcard-title {
   position: relative; z-index: 2;
   margin: 0; font-family: var(--serif); font-style: italic; font-weight: 400;
-  font-size: 54px; line-height: .9; letter-spacing: -.03em; text-transform: none;
+  font-size: 44px; line-height: .95; letter-spacing: 1px; text-transform: none;
 }
 
 /* pasta de vidro rosa-bebê: aba translúcida atrás, frente fosca, brilho suave embaixo */
