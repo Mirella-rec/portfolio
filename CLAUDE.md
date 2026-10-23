@@ -146,6 +146,8 @@ Quando ela escrever **SALVAR ALTERAÇÃO**, execute nesta ordem:
    Exemplo: `2026-10-21 — celular-guia na seção Sobre`.
 4. Adicione uma linha em `CHANGELOG.md` com a data, o que mudou e o porquê.
 5. Abra a prévia e confirme que ela carrega sem erros.
+   Depois publique a pasta `preview/` como link de prévia (Artifact, sempre no mesmo link) para a Mirella abrir no celular.
+   O build usa caminhos relativos (`base: "./"` no vite.config.js) para isso funcionar.
 6. Responda à Mirella com:
    - 1 ou 2 frases sobre o que mudou;
    - como abrir a prévia.
