@@ -94,7 +94,12 @@ Não é caótico: é colagem com curadoria.
 ## 4. Estrutura do site
 
 1. **Abertura:** colagem animada.
-2. **Sobre:** trajetória e números.
+2. **Sobre ("QUEM SOU EU"):** trajetória e números. Feito primeiro no celular (decisão de 22/10: finalizar o mobile antes do desktop).
+   - Título no mesmo estilo de PROJETOS (Playfair reta, caixa alta, centralizado, sem número).
+   - Texto enxuto que "acende" palavra por palavra conforme o scroll; números que contam ao aparecer (`src/about.js`).
+   - Uma forma orgânica de vidro rosa-bebê flutua sobre o texto (muda de forma devagar, desce com o scroll e segue o dedo).
+     Ela precisa ser transparente o bastante para o texto embaixo continuar legível: rosa só na borda e nos reflexos.
+   - Confirmar com a Mirella: idade em que criou a Spencive (15 ou 16 anos) e se pode citar Chilli Beans, Smoke e Amir Slama.
    - Marca própria Spencive, criada aos 15 anos, com 70% de ROI em 3 meses.
    - Mais de 1.200 vídeos roteirizados, captados e editados em 9 meses na Casa Martin Medeiros.
    - Festivais Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama).

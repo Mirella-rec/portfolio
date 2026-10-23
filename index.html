@@ -37,14 +37,16 @@
     </section>
 
     <!-- 2. Sobre -->
-    <section class="section" id="sobre">
+    <section class="section about" id="sobre">
       <header class="sec-head">
-        <span class="sec-num">01</span>
         <h2 data-i18n="sobre.title"></h2>
       </header>
-      <div class="slot">
-        <span class="tag tag-rosa" data-i18n="soon"></span>
-        <p data-i18n="sobre.placeholder"></p>
+      <!-- Quem sou eu (src/about.js): texto que acende no scroll + forma de vidro flutuando por cima -->
+      <div class="about-stage" id="about">
+        <p class="about-lede"></p>
+        <ul class="about-stats"></ul>
+        <p class="about-skills" data-i18n="sobre.skills"></p>
+        <div class="about-blob" aria-hidden="true"><span class="about-blob-body"><i></i></span></div>
       </div>
     </section>
 

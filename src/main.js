@@ -1,5 +1,6 @@
 import { createTree } from "./tree.js";
 import { createDeck } from "./deck.js";
+import { createAbout } from "./about.js";
 
 // Textos ficam em content/*.json (CLAUDE.md, seção 6)
 const CONTENT_URLS = {
@@ -45,6 +46,8 @@ const tree = createTree({
   panel: document.getElementById("folder-panel"),
 });
 
+const about = createAbout(document.getElementById("about"));
+
 const deck = createDeck({
   root: document.getElementById("deck"),
   sheet: document.getElementById("sheet"),
@@ -56,6 +59,7 @@ async function setLang(next) {
   applyText(t, lang);
   tree.setContent(t.projetos);
   deck.setContent(t.projetos);
+  about.setContent(t.sobre, lang);
   saveLang(lang);
 }
 

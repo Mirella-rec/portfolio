@@ -18,8 +18,29 @@
     "placeholder": "colagem animada da abertura"
   },
   "sobre": {
-    "title": "sobre",
-    "placeholder": "trajetória e números"
+    "title": "quem sou eu",
+    "lede": "Sou Mirella Iezzi, videomaker em Guarujá. Roteirizo, capto e edito vídeos verticais para marcas de moda, beleza e eventos, do briefing ao post.",
+    "stats": [
+      {
+        "n": 1200,
+        "pre": "+",
+        "label": "vídeos roteirizados, captados e editados em 9 meses"
+      },
+      {
+        "n": 70,
+        "suf": "%",
+        "label": "de retorno sobre o investimento em 3 meses com a Spencive, minha marca de moda"
+      },
+      {
+        "big": "festivais",
+        "label": "Melhor Dia (Chilli Beans, Smoke) e Salão Casa Moda (Amir Slama)"
+      },
+      {
+        "big": "ESPM",
+        "label": "marketing digital com foco em growth"
+      }
+    ],
+    "skills": "captação · roteiro · edição · social media"
   },
   "projetos": {
     "title": "projetos",

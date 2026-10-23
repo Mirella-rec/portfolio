@@ -18,8 +18,29 @@
     "placeholder": "animated opening collage"
   },
   "sobre": {
-    "title": "about",
-    "placeholder": "background and numbers"
+    "title": "about me",
+    "lede": "I'm Mirella Iezzi, a videomaker in Guarujá, Brazil. I script, shoot and edit vertical video for fashion, beauty and event brands, from brief to post.",
+    "stats": [
+      {
+        "n": 1200,
+        "pre": "+",
+        "label": "videos scripted, shot and edited in 9 months"
+      },
+      {
+        "n": 70,
+        "suf": "%",
+        "label": "return on investment in 3 months with Spencive, my own fashion brand"
+      },
+      {
+        "big": "festivals",
+        "label": "Melhor Dia (Chilli Beans, Smoke) and Salão Casa Moda (Amir Slama)"
+      },
+      {
+        "big": "ESPM",
+        "label": "digital marketing with a growth focus"
+      }
+    ],
+    "skills": "filming · scripting · editing · social media"
   },
   "projetos": {
     "title": "projects",

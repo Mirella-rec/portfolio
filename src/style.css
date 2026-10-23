@@ -427,6 +427,84 @@ html.sheet-open, html.sheet-open body { overflow: hidden; }
 }
 
 /* Título da seção Projetos: caixa alta, centralizado, com mais respiro até a primeira pasta */
-#projetos .sec-head { flex-direction: column; align-items: center; gap: 6px; margin-bottom: 64px; text-align: center; }
-#projetos .sec-head h2 { font-style: normal; text-transform: uppercase; letter-spacing: -.01em; }
-@media (max-width: 700px) { #projetos .sec-head { margin-bottom: 48px; } }
+#sobre .sec-head, #projetos .sec-head { flex-direction: column; align-items: center; gap: 6px; margin-bottom: 64px; text-align: center; }
+#sobre .sec-head h2, #projetos .sec-head h2 { font-style: normal; text-transform: uppercase; letter-spacing: -.01em; }
+@media (max-width: 700px) { #sobre .sec-head, #projetos .sec-head { margin-bottom: 48px; } }
+
+/* =========================================================
+   Quem sou eu (src/about.js)
+   Texto enxuto que acende no scroll, números que contam
+   e uma forma orgânica de vidro rosa-bebê flutuando por cima.
+   ========================================================= */
+.about-stage { position: relative; max-width: 640px; margin: 0 auto; }
+
+.about-lede {
+  position: relative; z-index: 1; margin: 0 0 56px;
+  font-family: var(--serif); font-size: clamp(27px, 7.4vw, 44px); line-height: 1.22;
+  letter-spacing: -.005em; text-transform: none; text-wrap: pretty;
+}
+.about-lede span { color: rgba(43, 42, 38, .16); transition: color .45s ease; }
+.about-lede span.on { color: var(--tinta); }
+
+.about-stats { position: relative; z-index: 1; list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.about-stats li {
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px;
+  padding: 22px 0; border-top: 1px solid var(--linha);
+  opacity: 0; transform: translateY(18px);
+  transition: opacity .7s ease, transform .8s cubic-bezier(.2,.9,.2,1);
+}
+.about-stats li:last-child { border-bottom: 1px solid var(--linha); }
+.about-stats li.in { opacity: 1; transform: none; }
+.about-stats b {
+  font-family: var(--serif); font-weight: 400; font-size: 52px; line-height: 1;
+  letter-spacing: -.01em; font-variant-numeric: tabular-nums; text-transform: none;
+}
+.about-stats b.word { font-style: italic; font-size: 40px; letter-spacing: 1px; }
+.about-stats span { font-size: 12px; line-height: 1.5; color: var(--suave); max-width: 34ch; }
+
+.about-skills { position: relative; z-index: 1; margin: 28px 0 0; text-align: center; color: var(--rosa-texto); }
+
+/* forma de vidro: transparente o bastante para o texto continuar legível */
+.about-blob {
+  position: absolute; left: 0; top: 0; z-index: 2; pointer-events: none;
+  width: clamp(150px, 46vw, 260px); aspect-ratio: 1;
+  will-change: transform;
+}
+.about-blob-body {
+  position: absolute; inset: 0; display: block;
+  border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%;
+  /* centro quase transparente; o rosa-bebê fica na borda, como uma gota de vidro */
+  background:
+    radial-gradient(circle at 30% 24%, rgba(255,255,255,.7), rgba(255,255,255,0) 16%),
+    radial-gradient(closest-side, rgba(250,222,231,0) 62%, rgba(244,196,213,.32) 92%, rgba(240,182,203,.5));
+  border: 1px solid rgba(255,255,255,.85);
+  box-shadow:
+    inset 0 0 0 1px rgba(244,196,213,.35),
+    inset -6px -10px 18px rgba(232,160,186,.22),
+    0 14px 34px rgba(232,160,186,.16);
+  -webkit-backdrop-filter: brightness(1.03) contrast(1.06);
+          backdrop-filter: brightness(1.03) contrast(1.06);
+  animation: morph 11s ease-in-out infinite, bob 7s ease-in-out infinite;
+}
+/* reflexo em arco, como numa gota */
+.about-blob-body i {
+  position: absolute; left: 18%; top: 12%; width: 38%; height: 22%;
+  border-radius: 50%; border-top: 2px solid rgba(255,255,255,.9);
+  transform: rotate(-24deg); filter: blur(.4px);
+}
+@keyframes morph {
+  0%, 100% { border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%; }
+  25% { border-radius: 58% 42% 38% 62% / 52% 61% 39% 48%; }
+  50% { border-radius: 37% 63% 51% 49% / 63% 38% 62% 37%; }
+  75% { border-radius: 61% 39% 57% 43% / 40% 57% 43% 60%; }
+}
+@keyframes bob {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(14deg) scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-blob-body { animation: none; }
+  .about-lede span { color: var(--tinta); transition: none; }
+  .about-stats li { opacity: 1; transform: none; transition: none; }
+}
