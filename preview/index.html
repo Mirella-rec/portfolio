@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-BSXJQkbC.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Bj_rQ6bj.css">
+  <script type="module" crossorigin src="/assets/index-CVmfx8UC.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DKoCNceh.css">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -52,11 +52,8 @@
     <!-- 3. Projetos: árvore de pastas -->
     <section class="section" id="projetos">
       <header class="sec-head">
-        <span class="sec-num">02</span>
         <h2 data-i18n="projetos.title"></h2>
       </header>
-      <p class="sec-kicker" data-i18n="projetos.kicker"></p>
-
       <div class="finder">
         <div class="finder-bar">
           <div class="finder-dots" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -80,6 +77,11 @@
           </header>
           <div class="folder-reel" id="folder-reel"></div>
         </div>
+      </div>
+
+      <!-- Celular: cards de vidro (src/deck.js). O Finder com a árvore fica no computador. -->
+      <div class="deck" id="deck">
+        <div class="deck-track"></div>
       </div>
     </section>
 
@@ -125,6 +127,24 @@
     </div>
     <p class="footer-sig" data-i18n="signature"></p>
   </footer>
+
+
+  <!-- Pasta aberta no celular: folha que desdobra -->
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="sheet-scrim"></div>
+    <div class="sheet-fold">
+      <div class="sheet-media">
+        <span class="sheet-grab" aria-hidden="true"></span>
+        <button class="sheet-close" type="button" data-i18n-aria="projetos.closeLabel">✕</button>
+      </div>
+      <div class="sheet-body">
+        <h3 class="sheet-title" id="sheet-title"></h3>
+        <p class="sheet-desc"></p>
+        <p class="sheet-sub"></p>
+        <div class="sheet-reel"></div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

@@ -1,5 +1,7 @@
 {
-  "meta": { "title": "Mirella Iezzi — videomaker" },
+  "meta": {
+    "title": "Mirella Iezzi — videomaker"
+  },
   "signature": "Mirella Iezzi",
   "soon": "em breve",
   "nav": {
@@ -21,7 +23,6 @@
   },
   "projetos": {
     "title": "projetos",
-    "kicker": "cada galho é uma área · cada pasta abre um projeto",
     "path": "projetos",
     "sidebar": "galhos",
     "replay": "↻ crescer de novo",
@@ -31,11 +32,48 @@
     "video": "vídeo 9:16",
     "take": "take",
     "branches": [
-      { "id": "moda", "label": "moda", "items": ["casa martin medeiros", "spencive", "salão casa moda"] },
-      { "id": "eventos", "label": "eventos", "items": ["melhor dia", "coberturas", "story making"] },
-      { "id": "social", "label": "social / reels", "items": ["moda", "beleza", "saúde"] },
-      { "id": "teatro", "label": "teatro", "items": ["procópio ferreira", "retrospectivas"] }
-    ]
+      {
+        "id": "moda",
+        "label": "moda",
+        "items": [
+          "casa martin medeiros",
+          "spencive",
+          "salão casa moda"
+        ],
+        "desc": "Vídeos para marcas autorais de moda: lookbooks, bastidores de ateliê e lançamentos de coleção."
+      },
+      {
+        "id": "eventos",
+        "label": "eventos",
+        "items": [
+          "melhor dia",
+          "coberturas",
+          "story making"
+        ],
+        "desc": "Coberturas de festivais e eventos, com story making ao vivo e aftermovies."
+      },
+      {
+        "id": "social",
+        "label": "social / reels",
+        "items": [
+          "moda",
+          "beleza",
+          "saúde"
+        ],
+        "desc": "Reels e conteúdos verticais para moda, beleza e saúde, do roteiro à edição."
+      },
+      {
+        "id": "teatro",
+        "label": "teatro",
+        "items": [
+          "procópio ferreira",
+          "retrospectivas"
+        ],
+        "desc": "Registros de espetáculos e retrospectivas em vídeo para celebrações."
+      }
+    ],
+    "open": "abrir",
+    "closeLabel": "fechar pasta"
   },
   "servicos": {
     "title": "serviços",
