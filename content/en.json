@@ -40,7 +40,8 @@
           "casa martin medeiros",
           "spencive",
           "salão casa moda"
-        ]
+        ],
+        "desc": "Videos for independent fashion brands: lookbooks, atelier behind-the-scenes and collection launches."
       },
       {
         "id": "eventos",
@@ -49,7 +50,8 @@
           "melhor dia",
           "coverage",
           "story making"
-        ]
+        ],
+        "desc": "Festival and event coverage, with live story making and aftermovies."
       },
       {
         "id": "social",
@@ -58,7 +60,8 @@
           "fashion",
           "beauty",
           "health"
-        ]
+        ],
+        "desc": "Reels and vertical content for fashion, beauty and health, from script to edit."
       },
       {
         "id": "teatro",
@@ -66,7 +69,8 @@
         "items": [
           "procópio ferreira",
           "retrospectives"
-        ]
+        ],
+        "desc": "Stage performance recordings and video retrospectives for celebrations."
       }
     ],
     "deckHint": "scroll to see · tap to open",

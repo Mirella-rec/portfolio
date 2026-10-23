@@ -1,15 +1,10 @@
 // Projetos no celular (≤700px): pastas de vidro fosco empilhadas na vertical,
 // cada uma surge em fade-in conforme a pessoa rola a tela.
-// Cada card é um galho; o fundo é um gradiente "líquido" nas cores da marca,
-// a pasta tem frente de vidro, e o rodapé do card tem desfoque progressivo.
-// Ao tocar, a pasta abre numa folha que desdobra como papel.
+// Cada card é um galho: vidro fosco transparente, título grande e uma pasta de vidro rosa-bebê.
+// Ao tocar, a pasta abre numa folha que desdobra como papel, com a descrição e os vídeos.
 
-const PALETTES = {
-  moda: ["var(--rosa)", "var(--rosa-sombra)", "#FBEDE6"],
-  eventos: ["var(--folha-clara)", "var(--folha-media)", "var(--rosa)"],
-  social: ["#FBE3D6", "var(--rosa)", "var(--folha-clara)"],
-  teatro: ["var(--folha-media)", "var(--folha-clara)", "var(--rosa-sombra)"],
-};
+// brilho suave atrás do topo da folha aberta (tons de rosa-bebê)
+const GLOW = ["var(--rosa)", "#FBE6EC", "var(--papel)"];
 
 function liquid(colors) {
   const l = document.createElement("div");
@@ -22,14 +17,6 @@ function liquid(colors) {
     l.appendChild(s);
   });
   return l;
-}
-
-function progressiveBlur() {
-  const p = document.createElement("div");
-  p.className = "pblur";
-  p.setAttribute("aria-hidden", "true");
-  p.innerHTML = "<i></i><i></i><i></i><i></i>";
-  return p;
 }
 
 export function createDeck({ root, sheet }) {
@@ -48,29 +35,17 @@ export function createDeck({ root, sheet }) {
       card.style.setProperty("--i", i);
       card.setAttribute("aria-label", `${text.open}: ${b.label}`);
 
-      card.appendChild(liquid(PALETTES[b.id] || PALETTES.moda));
 
-      const top = document.createElement("div");
-      top.className = "gcard-top";
-      top.innerHTML = `<h3 class="gcard-title"></h3><span class="gcard-pill"></span>`;
-      top.querySelector(".gcard-title").textContent = b.label;
-      top.querySelector(".gcard-pill").textContent = text.open;
+      const title = document.createElement("h3");
+      title.className = "gcard-title";
+      title.textContent = b.label;
 
       const folder = document.createElement("div");
       folder.className = "gfolder";
       folder.setAttribute("aria-hidden", "true");
-      folder.innerHTML = `<span class="gfolder-back"></span><span class="gfolder-front"></span>`;
+      folder.innerHTML = `<span class="gfolder-glow"></span><span class="gfolder-back"></span><span class="gfolder-front"></span>`;
 
-      const foot = document.createElement("div");
-      foot.className = "gcard-foot";
-      foot.innerHTML = `<ul></ul>`;
-      b.items.forEach(name => {
-        const li = document.createElement("li");
-        li.textContent = name;
-        foot.querySelector("ul").appendChild(li);
-      });
-
-      card.append(top, folder, progressiveBlur(), foot);
+      card.append(title, folder);
       card.addEventListener("click", () => openSheet(b, i, card));
       track.appendChild(card);
       reveal.observe(card);
@@ -98,9 +73,10 @@ export function createDeck({ root, sheet }) {
   function openSheet(b, i, card) {
     lastCard = card;
     sheet.querySelector(".sheet-title").textContent = b.label;
+    sheet.querySelector(".sheet-desc").textContent = b.desc || "";
     sheet.querySelector(".sheet-sub").textContent = text.statusNote;
     media.querySelector(".liquid")?.remove();
-    media.prepend(liquid(PALETTES[b.id] || PALETTES.moda));
+    media.prepend(liquid(GLOW));
 
     reel.innerHTML = "";
     b.items.forEach(name => {

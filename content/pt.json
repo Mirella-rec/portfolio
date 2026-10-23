@@ -40,7 +40,8 @@
           "casa martin medeiros",
           "spencive",
           "salão casa moda"
-        ]
+        ],
+        "desc": "Vídeos para marcas autorais de moda: lookbooks, bastidores de ateliê e lançamentos de coleção."
       },
       {
         "id": "eventos",
@@ -49,7 +50,8 @@
           "melhor dia",
           "coberturas",
           "story making"
-        ]
+        ],
+        "desc": "Coberturas de festivais e eventos, com story making ao vivo e aftermovies."
       },
       {
         "id": "social",
@@ -58,7 +60,8 @@
           "moda",
           "beleza",
           "saúde"
-        ]
+        ],
+        "desc": "Reels e conteúdos verticais para moda, beleza e saúde, do roteiro à edição."
       },
       {
         "id": "teatro",
@@ -66,7 +69,8 @@
         "items": [
           "procópio ferreira",
           "retrospectivas"
-        ]
+        ],
+        "desc": "Registros de espetáculos e retrospectivas em vídeo para celebrações."
       }
     ],
     "deckHint": "role para ver · toque para abrir",

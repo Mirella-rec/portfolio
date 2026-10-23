@@ -286,30 +286,32 @@ button { font: inherit; letter-spacing: inherit; text-transform: inherit; color:
 .deck-track { display: flex; flex-direction: column; gap: 22px; }
 
 .gcard {
-  position: relative; width: 100%; aspect-ratio: 4 / 4.6;
-  border: 0; padding: 20px; border-radius: 28px; overflow: hidden; isolation: isolate;
+  position: relative; width: 100%; aspect-ratio: 4 / 3.7;
+  border: 0; padding: 22px; border-radius: 30px; overflow: hidden; isolation: isolate;
   text-align: left; cursor: pointer;
   display: flex; flex-direction: column;
-  background: rgba(255, 255, 255, .55);
+  /* vidro transparente: o quadriculado do papel aparece desfocado por trás */
+  background: linear-gradient(160deg, rgba(255,255,255,.62), rgba(255,255,255,.28));
+  -webkit-backdrop-filter: blur(10px) saturate(1.3); backdrop-filter: blur(10px) saturate(1.3);
   -webkit-tap-highlight-color: transparent;
   /* fade-in ao entrar na tela */
   opacity: 0; transform: translateY(36px) scale(.97);
   transition: opacity .8s ease, transform .9s cubic-bezier(.2,.9,.2,1);
 }
 .gcard.in { opacity: 1; transform: none; }
-.gcard.settled { transition: none; }
+.gcard.settled { transition: transform .25s ease; }
 .gcard:active { transform: scale(.985); }
-/* borda de vidro: fio claro + brilho iridescente suave nas cores da marca */
+/* borda de vidro: fio claro com um toque de rosa-bebê */
 .gcard::after {
   content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 5; pointer-events: none;
   padding: 1px;
-  background: conic-gradient(from 200deg,
-    rgba(255,255,255,.95), var(--rosa), rgba(255,255,255,.4), var(--folha-clara), rgba(255,255,255,.95));
+  background: linear-gradient(150deg, rgba(255,255,255,.95), rgba(244,211,219,.7) 40%, rgba(255,255,255,.3) 70%, rgba(255,255,255,.9));
   -webkit-mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
           mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
 }
 .gcard:focus-visible { outline: 2px solid var(--rosa-texto); outline-offset: 4px; }
 
+/* gradiente líquido (usado no topo da pasta aberta) */
 /* gradiente líquido: manchas desfocadas que se movem devagar */
 .liquid { position: absolute; inset: -20%; z-index: -1; filter: blur(28px) saturate(1.15); }
 .blob {
@@ -323,56 +325,45 @@ button { font: inherit; letter-spacing: inherit; text-transform: inherit; color:
 @keyframes drift2 { to { transform: translate(-35%, 10%) scale(.9); } }
 @keyframes drift3 { to { transform: translate(20%, -30%) scale(1.2); } }
 
-.gcard-top { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-.gcard-pill {
-  padding: 4px 10px; border-radius: 999px; color: var(--tinta);
-  background: rgba(255,255,255,.5); border: 1px solid rgba(255,255,255,.8);
-  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-}
-
-/* título no lugar do número, em escala grande */
 .gcard-title {
+  position: relative; z-index: 2;
   margin: 0; font-family: var(--serif); font-style: italic; font-weight: 400;
   font-size: 54px; line-height: .9; letter-spacing: -.03em; text-transform: none;
 }
-.gcard-pill { flex: none; margin-top: 6px; font-size: 11px; }
 
-/* pasta de vidro: aba sólida atrás, frente fosca */
-.gfolder { position: relative; z-index: 2; width: 52%; aspect-ratio: 1.3; margin: auto; }
+/* pasta de vidro rosa-bebê: aba translúcida atrás, frente fosca, brilho suave embaixo */
+.gfolder { position: relative; z-index: 2; width: 60%; aspect-ratio: 1.3; margin: auto; }
+.gfolder-glow {
+  position: absolute; left: 6%; right: 6%; bottom: -14%; height: 55%; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(244,211,219,.95), rgba(244,211,219,0));
+  filter: blur(14px);
+}
 .gfolder-back {
-  position: absolute; inset: 8% 0 12% 0; border-radius: 10px;
-  background: linear-gradient(#B07385, var(--rosa-texto));
+  position: absolute; inset: 8% 0 10% 0; border-radius: 14px;
+  background: linear-gradient(180deg, rgba(246,196,212,.95), rgba(240,184,202,.85));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
 }
 .gfolder-back::before {
-  content: ""; position: absolute; top: -12%; left: 0; width: 42%; height: 20%;
-  background: #B07385; border-radius: 8px 12px 0 0;
+  content: ""; position: absolute; top: -11%; left: 0; width: 40%; height: 20%;
+  background: rgba(246,196,212,.95); border-radius: 10px 14px 0 0;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
 }
 .gfolder-front {
-  position: absolute; inset: 26% -2% 0 -2%; border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.35));
-  border: 1px solid rgba(255,255,255,.85);
-  -webkit-backdrop-filter: blur(12px) saturate(1.4); backdrop-filter: blur(12px) saturate(1.4);
+  position: absolute; inset: 27% -3% 0 -3%; border-radius: 16px; overflow: hidden;
+  background: linear-gradient(180deg, rgba(255,244,247,.62), rgba(250,214,225,.38));
+  border: 1px solid rgba(255,255,255,.9);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.95), inset 0 -10px 24px rgba(244,211,219,.45);
+  -webkit-backdrop-filter: blur(14px) saturate(1.5); backdrop-filter: blur(14px) saturate(1.5);
   transform-origin: bottom; transition: transform .5s cubic-bezier(.3,1.5,.5,1);
 }
 .gfolder-front::after { /* reflexo que passa pelo vidro */
-  content: ""; position: absolute; inset: 0; border-radius: inherit;
-  background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.7) 50%, transparent 65%);
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.75) 50%, transparent 65%);
   background-size: 250% 100%; animation: sheen 5s ease-in-out infinite;
 }
 @keyframes sheen { 0%, 60% { background-position: 120% 0; } 100% { background-position: -120% 0; } }
 .gcard:active .gfolder-front { transform: perspective(300px) rotateX(-22deg); }
-.gcard:active 
-/* desfoque progressivo: camadas com blur crescente, cada uma mascarada numa faixa */
-.pblur { position: absolute; left: 0; right: 0; bottom: 0; height: 30%; z-index: 1; pointer-events: none; }
-.pblur i { position: absolute; inset: 0; }
-.pblur i:nth-child(1) { -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px); -webkit-mask: linear-gradient(transparent 0%, #000 25%, #000 50%, transparent 75%); mask: linear-gradient(transparent 0%, #000 25%, #000 50%, transparent 75%); }
-.pblur i:nth-child(2) { -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); -webkit-mask: linear-gradient(transparent 25%, #000 50%, #000 75%, transparent 100%); mask: linear-gradient(transparent 25%, #000 50%, #000 75%, transparent 100%); }
-.pblur i:nth-child(3) { -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px); -webkit-mask: linear-gradient(transparent 50%, #000 75%); mask: linear-gradient(transparent 50%, #000 75%); }
-.pblur i:nth-child(4) { background: linear-gradient(transparent 40%, rgba(246,243,236,.7)); }
 
-.gcard-foot { position: relative; z-index: 2; margin-top: 14px; }
-.gcard-foot ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; color: var(--suave); }
-.gcard-foot li::before { content: "▸ "; color: var(--rosa-texto); }
 
 /* ---------- folha da pasta aberta (desdobra como papel) ---------- */
 .sheet { position: fixed; inset: 0; z-index: 90; perspective: 1100px; }
@@ -409,7 +400,11 @@ button { font: inherit; letter-spacing: inherit; text-transform: inherit; color:
   margin: 0; font-family: var(--serif); font-style: italic; font-weight: 400;
   font-size: 44px; line-height: 1; text-transform: none; letter-spacing: -.02em;
 }
-.sheet-sub { margin: 8px 0 18px; color: var(--suave); font-size: 12px; }
+.sheet-desc {
+  margin: 12px 0 0; max-width: 34ch;
+  font-family: var(--serif); font-size: 17px; line-height: 1.4; letter-spacing: 0; text-transform: none; color: var(--tinta);
+}
+.sheet-sub { margin: 10px 0 18px; color: var(--suave); font-size: 11px; }
 .sheet-reel { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 20px; scrollbar-width: none; margin: 0 -20px; padding: 0 20px; }
 .sheet-reel::-webkit-scrollbar { display: none; }
 .sheet-reel figure { margin: 0; flex: 0 0 42%; scroll-snap-align: start; }
